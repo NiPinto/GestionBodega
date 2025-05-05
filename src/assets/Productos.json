@@ -1,0 +1,88 @@
+[
+    {
+        "fotos":"assets/img/41.jpg",
+        "sku":"10000078035",
+        "producto":"ETIQ CIRC PLATOS PREPA 9.5X9.5CM 500U R10",
+        "rollos":"10",
+        "unidadesRollo":"500"
+
+
+    },
+    {
+        "fotos":"assets/img/32.jpg",
+        "sku":"10000078029",
+        "producto":"ETIQ CIRCU USO INTERNO 9.5X9CM 5500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500"
+    },
+    {
+        "fotos":"assets/img/34.jpg",
+        "sku":"10000078028",
+        "producto":"ETIQ CIRCULO VERDURAS 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500"
+    },
+    {
+        "fotos":" ",
+        "sku":"10000078060",
+        "producto":"ETIQ CIRC AUDIO VIDEO 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500"
+    },
+    {
+        "fotos":"assets/img/33.jpg",
+        "sku":"10000078057",
+        "producto":"ETIQ CIRCUL CAFETERIA 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500"
+    },
+    {
+        "fotos":"assets/img/33.jpg",
+        "sku":"10000078057",
+        "producto":"ETIQ CIRCUL CAFETERIA 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500"
+    },
+    {
+        "fotos":"assets/img/35.jpg",
+        "sku":"10000078056",
+        "producto":"ETIQ CIRCU CARNICERIA 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500"
+    },
+    {
+        "fotos":"",
+        "sku":"10000078055",
+        "producto":"ETIQUE CIRCULO CASINO 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500"
+    },
+    {
+        "fotos":"assets/img/36.jpg",
+        "sku":"10000078053",
+        "producto":"ETIQUET.CIRCULO CONGELADOS 9.5X9.5 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500"
+    },
+    {
+        "fotos":"assets/img/37.jpg",
+        "sku":"10000078052",
+        "producto":"ETIQ CIRCU DARK STORE 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500"
+    },
+    {   "fotos":"assets/img/26.jpg",
+        "sku":"10000078047",
+        "producto":"ETIQ CIRCU FIAMBRERIA 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500"
+    },
+    {
+        "fotos":"assets/img/36.jpg",
+        "sku":"10000078053",
+        "producto":"ETIQUET.CIRCULO CONGELADOS 9.5X9.5 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500"
+    }
+
+]

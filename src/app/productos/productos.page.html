@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Productos</ion-title>
+    </ion-toolbar>
+   
+  </ion-header>
+  <a routerLink="/home">Volver</a>
+  <ion-grid>
+    <ion-row>
+      <ion-col>Fotos</ion-col>
+      <ion-col>SKU</ion-col>
+      <ion-col>Producto</ion-col>
+      <ion-col>RollosXCaja</ion-col>
+      <ion-col>UnidadesXRollo</ion-col>
+    </ion-row>
+    <ion-row *ngFor="let item of jsonData">
+      <ion-col class="colorEti"><img [src]="item.fotos" alt="{{ item.sku }}"></ion-col>
+      <ion-col class="colorEti">{{item.sku}}</ion-col>
+      <ion-col class="colorEti">{{item.producto}}</ion-col>
+      <ion-col class="colorEti">{{item.rollos}}</ion-col>
+      <ion-col class="colorEti">{{item.unidadesRollo}}</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
