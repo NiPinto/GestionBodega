@@ -19,6 +19,7 @@
       <ion-col>Producto</ion-col>
       <ion-col>RollosXCaja</ion-col>
       <ion-col>UnidadesXRollo</ion-col>
+      <ion-col>Grupo</ion-col>
     </ion-row>
     <ion-row *ngFor="let item of jsonData">
       <ion-col class="colorEti"><img [src]="item.fotos" alt="{{ item.sku }}"></ion-col>
@@ -26,6 +27,7 @@
       <ion-col class="colorEti">{{item.producto}}</ion-col>
       <ion-col class="colorEti">{{item.rollos}}</ion-col>
       <ion-col class="colorEti">{{item.unidadesRollo}}</ion-col>
+      <ion-col class="colorEti">{{item.grupo}}</ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
