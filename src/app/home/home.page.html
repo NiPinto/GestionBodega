@@ -12,12 +12,38 @@
       <ion-title size="large">Etimar</ion-title>
     </ion-toolbar>
   </ion-header>
+  <main>
+    <section id="bar-container">
+      <ul>
+        <li>
+          <a routerLink="/home">
+            <img src="/assets/icon/inventory.svg"/>
+            Inventario
+          </a>
+        </li>
+        <li>
+          <a routerLink="/productos">
+          <img src="/assets/icon/items.svg"/>
+          Productos
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src="/assets/icon/items.svg"/>
+            xxx
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="container-principal">
+      <h1>Mi inventario</h1>
+      <p>La mejor aplicación para gestionar tu inventario de productos.</p>
+      
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-    <a routerLink="/qr">Comenzar a Scanear</a>
-    <a routerLink="/productos">Listado de Productos</a>
-
-  </div>
+      
+      <a routerLink="/productos">Listado de Productos</a>
+  
+    </section>
+    <button routerLink="/qr" id="btn-qr">+</button>
+  </main>
 </ion-content>
