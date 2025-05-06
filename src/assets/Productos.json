@@ -351,5 +351,133 @@
         "rollos":"200",
         "unidadesRollo":"500",
         "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/46.jpg",
+        "sku":"69137",
+        "producto":"ETIQ SATO JUMBO OFERTA PB2 1000U R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/48.jpg",
+        "sku":"69139",
+        "producto":"ETIQ SATO RESOLUCION P Y P  1000U R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/44.jpg",
+        "sku":"69140",
+        "producto":"ETIQ SATO SEGURIDAD PB2 ROLLO 1000U R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/45.jpg",
+        "sku":"69141",
+        "producto":"ETIQ. SATO USO INTERNO ROLLO 1000UN R10 ",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/45.jpg",
+        "sku":"57598",
+        "producto":"ETIQUETA DESPACHO CECINA 10X15 500UN 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Varios"
+    },
+    {
+        "fotos":"assets/img/47.jpg",
+        "sku":"10000026506",
+        "producto":"ETIQUETA SATO LIQUIDACION 600UN R10",
+        "rollos":"10",
+        "unidadesRollo":"600",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/10.jpg",
+        "sku":"51512",
+        "producto":"ETIQUETA TRAZABILIDAD 8X10 CM 500U R10",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Varios"
+    },
+    {
+        "fotos":"assets/img/73.jpg",
+        "sku":"51512",
+        "producto":"ETIQ COLOR VERDE 3X3CM R1000U 10R ",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Color3x3"
+    },
+    {
+        "fotos":"assets/img/70.jpg",
+        "sku":"10000068598",
+        "producto":"ETIQ COLOR BLANCO 3X3CM R1000U 10R ",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Color3x3"
+    },
+    {
+        "fotos":"assets/img/70.jpg",
+        "sku":"10000068599",
+        "producto":"ETIQ COLOR AZUL 3X3CM R1000U 10R ",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Color3x3"
+    },
+    {
+        "fotos":"assets/img/71.jpg",
+        "sku":"10000068599",
+        "producto":"ETIQ COLOR AZUL 3X3CM R1000U 10R ",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Color3x3"
+    },
+    {
+        "fotos":"assets/img/72.jpg",
+        "sku":"10000068600",
+        "producto":"ETIQ COLOR NARANJO 3X3CM R1000U 10R ",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Color3x3"
+    },
+    {
+        "fotos":"assets/img/69.jpg",
+        "sku":"10000068597",
+        "producto":"ETIQ COLOR AMARILLO 3X3CM R1000U 10R ",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Color3x3"
+    },
+    {
+        "fotos":"assets/img/78.jpg",
+        "sku":"10000089553",
+        "producto":"ETIQ COLOR ROJO 3X3CM R1000U 10R ",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Color3x3"
+    },
+    {
+        "fotos":"assets/img/79.jpg",
+        "sku":"10000089606",
+        "producto":"ETIQ COLOR NEGRO 3X3CM R1000U 10R ",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Color3x3"
+    },
+    {
+        "fotos":"assets/img/80.jpg",
+        "sku":"10000089611",
+        "producto":"ETIQ COLOR CAFE 3X3CM R1000U 10R ",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Color3x3"
     }
 ]

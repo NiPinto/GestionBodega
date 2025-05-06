@@ -9,10 +9,18 @@
     <ion-toolbar>
       <ion-title size="large">Productos</ion-title>
     </ion-toolbar>
-   
   </ion-header>
   <a routerLink="/home">Volver</a>
   <ion-grid>
+    <ion-searchbar placeholder="Ingrese nombre etiqueta"></ion-searchbar>
+    <div >
+      <ion-select [(ngModel)]="selectedGrupo" name="select">
+        <ion-select-option *ngFor="let grupo of uniqueGrupos" [value]="grupo">{{grupo}}</ion-select-option>
+        <ion-select-option value="">Todos</ion-select-option>
+      </ion-select>
+      
+      <ion-button (click)="buscarProductosPorGrupo()">Buscar</ion-button>
+    </div>
     <ion-row>
       <ion-col>Fotos</ion-col>
       <ion-col>SKU</ion-col>
@@ -21,7 +29,7 @@
       <ion-col>UnidadesXRollo</ion-col>
       <ion-col>Grupo</ion-col>
     </ion-row>
-    <ion-row *ngFor="let item of jsonData">
+    <ion-row *ngFor="let item of productosFiltrados">
       <ion-col class="colorEti"><img [src]="item.fotos" alt="{{ item.sku }}"></ion-col>
       <ion-col class="colorEti">{{item.sku}}</ion-col>
       <ion-col class="colorEti">{{item.producto}}</ion-col>
