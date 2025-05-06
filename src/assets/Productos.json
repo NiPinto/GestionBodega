@@ -4,7 +4,8 @@
         "sku":"10000078035",
         "producto":"ETIQ CIRC PLATOS PREPA 9.5X9.5CM 500U R10",
         "rollos":"10",
-        "unidadesRollo":"500"
+        "unidadesRollo":"500",
+        "grupo":"Circ_100"
 
 
     },
@@ -13,76 +14,342 @@
         "sku":"10000078029",
         "producto":"ETIQ CIRCU USO INTERNO 9.5X9CM 5500U 10R",
         "rollos":"10",
-        "unidadesRollo":"500"
+        "unidadesRollo":"500",
+        "grupo":"Circ_100"
     },
     {
         "fotos":"assets/img/34.jpg",
         "sku":"10000078028",
         "producto":"ETIQ CIRCULO VERDURAS 9.5X9.5CM 500U 10R",
         "rollos":"10",
-        "unidadesRollo":"500"
+        "unidadesRollo":"500",
+        "grupo":"Circ_100"
     },
     {
         "fotos":" ",
         "sku":"10000078060",
         "producto":"ETIQ CIRC AUDIO VIDEO 9.5X9.5CM 500U 10R",
         "rollos":"10",
-        "unidadesRollo":"500"
+        "unidadesRollo":"500",
+        "grupo":"Circ_100"
     },
     {
         "fotos":"assets/img/33.jpg",
         "sku":"10000078057",
         "producto":"ETIQ CIRCUL CAFETERIA 9.5X9.5CM 500U 10R",
         "rollos":"10",
-        "unidadesRollo":"500"
+        "unidadesRollo":"500",
+        "grupo":"Circ_100"
     },
     {
         "fotos":"assets/img/33.jpg",
         "sku":"10000078057",
         "producto":"ETIQ CIRCUL CAFETERIA 9.5X9.5CM 500U 10R",
         "rollos":"10",
-        "unidadesRollo":"500"
+        "unidadesRollo":"500",
+        "grupo":"Circ_100"
     },
     {
         "fotos":"assets/img/35.jpg",
         "sku":"10000078056",
         "producto":"ETIQ CIRCU CARNICERIA 9.5X9.5CM 500U 10R",
         "rollos":"10",
-        "unidadesRollo":"500"
+        "unidadesRollo":"500",
+        "grupo":"Circ_100"
     },
     {
         "fotos":"",
         "sku":"10000078055",
         "producto":"ETIQUE CIRCULO CASINO 9.5X9.5CM 500U 10R",
         "rollos":"10",
-        "unidadesRollo":"500"
+        "unidadesRollo":"500",
+        "grupo":"Circ_100"
     },
     {
         "fotos":"assets/img/36.jpg",
         "sku":"10000078053",
         "producto":"ETIQUET.CIRCULO CONGELADOS 9.5X9.5 500U 10R",
         "rollos":"10",
-        "unidadesRollo":"500"
+        "unidadesRollo":"500",
+        "grupo":"Circ_100"
     },
     {
         "fotos":"assets/img/37.jpg",
         "sku":"10000078052",
         "producto":"ETIQ CIRCU DARK STORE 9.5X9.5CM 500U 10R",
         "rollos":"10",
-        "unidadesRollo":"500"
+        "unidadesRollo":"500",
+        "grupo":"Circ_100"
     },
     {   "fotos":"assets/img/26.jpg",
         "sku":"10000078047",
         "producto":"ETIQ CIRCU FIAMBRERIA 9.5X9.5CM 500U 10R",
         "rollos":"10",
-        "unidadesRollo":"500"
+        "unidadesRollo":"500",
+        "grupo":"Circ_100"
     },
     {
         "fotos":"assets/img/36.jpg",
         "sku":"10000078053",
         "producto":"ETIQUET.CIRCULO CONGELADOS 9.5X9.5 500U 10R",
         "rollos":"10",
-        "unidadesRollo":"500"
+        "unidadesRollo":"500",
+        "grupo":"Circ_100"
+    },
+    {
+        "fotos":"assets/img/27.jpg",
+        "sku":"10000078043",
+        "producto":"ETIQUET.CIRCULO LACTEOS 9.5X9.5 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100" 
+    },
+    {
+        "fotos":"assets/img/28.jpg",
+        "sku":"10000078041",
+        "producto":"ETIQUET CIRCULO MERMA 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100" 
+    },
+    {
+        "fotos":"assets/img/29.jpg",
+        "sku":"10000078040",
+        "producto":"ETIQU CIRCU PANADERIA 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100" 
+    },
+    {
+        "fotos":"assets/img/30.jpg",
+        "sku":"10000078039",
+        "producto":"ETIQUE CIRCULO PASTAS 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100" 
+    },
+    {
+        "fotos":"assets/img/31.jpg",
+        "sku":"10000078038",
+        "producto":"ETIQ CIRCU PASTELERIA 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100" 
+    },
+    {
+        "fotos":"assets/img/25.jpg",
+        "sku":"10000078036",
+        "producto":"ETIQ CIRCU PESCADERIA 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100" 
+    },
+    {
+        "fotos":"assets/img/38.jpg",
+        "sku":"10000078034",
+        "producto":"ETIQUE CIRCULO QUESOS 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100" 
+    },
+    {
+        "fotos":"assets/img/39.jpg",
+        "sku":"10000078033",
+        "producto":"ETIQ CIRCUL RESTAURANT 9.5X9.5CM 500U10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100" 
+    },
+    {
+        "fotos":"assets/img/40.jpg",
+        "sku":"10000078031",
+        "producto":"ETIQUE CIRCULO RINCON 9.5X9.5CM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100" 
+    },
+    {
+        "fotos":"assets/img/13.jpg",
+        "sku":"10000078016",
+        "producto":"ETIQUETTA MES  ENERO 9.5X9.5CM  500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100_Mes" 
+    },
+    {
+        "fotos":"assets/img/14.jpg",
+        "sku":"10000078017",
+        "producto":"ETIQUETTA MES  FEBRERO 9.5X9.5CM  500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100_Mes" 
+    },
+    {
+        "fotos":"assets/img/15.jpg",
+        "sku":"10000078018",
+        "producto":"ETIQUETTA MES  MARZO 9.5X9.5CM  500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100_Mes" 
+    },
+    {
+        "fotos":"assets/img/16.jpg",
+        "sku":"10000078019",
+        "producto":"ETIQUETTA MES  ABRIL 9.5X9.5CM  500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100_Mes" 
+    },
+    {
+        "fotos":"assets/img/17.jpg",
+        "sku":"10000078020",
+        "producto":"ETIQUETTA MES  MAYO 9.5X9.5CM  500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100_Mes" 
+    },
+    {
+        "fotos":"assets/img/18.jpg",
+        "sku":"10000078021",
+        "producto":"ETIQUETTA MES  JUNIO 9.5X9.5CM  500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100_Mes" 
+    },
+    {
+        "fotos":"assets/img/19.jpg",
+        "sku":"10000078022",
+        "producto":"ETIQUETTA MES  JULIO 9.5X9.5CM  500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100_Mes" 
+    },
+    {
+        "fotos":"",
+        "sku":"10000078023",
+        "producto":"ETIQUETTA MES  AGOSTO 9.5X9.5CM  500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100_Mes" 
+    },
+    {
+        "fotos":"assets/img/20.jpg",
+        "sku":"10000078024",
+        "producto":"ETIQUETTA MES  SEMPTIEMBR 9.5X9.5CM  500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100_Mes" 
+    },
+    {
+        "fotos":"assets/img/21.jpg",
+        "sku":"10000078025",
+        "producto":"ETIQUETTA MES  OCTUBRE 9.5X9.5CM  500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100_Mes" 
+    },
+    {
+        "fotos":"assets/img/22.jpg",
+        "sku":"10000078026",
+        "producto":"ETIQUETTA MES  NOVIEMBRE 9.5X9.5CM  500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100_Mes" 
+    },
+    {
+        "fotos":"assets/img/23.jpg",
+        "sku":"10000078027",
+        "producto":"ETIQUETTA MES  DICIEMBRE 9.5X9.5CM  500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Circ_100_Mes" 
+    },
+    {
+        "fotos":"assets/img/0.jpg",
+        "sku":"10000101015",
+        "producto":"ETIQ C BARRA BOLLE 2C 7.2X6.8CM 1000U 5R",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"Cod_Barra" 
+    },
+    {
+        "fotos":"",
+        "sku":"10000101016",
+        "producto":"ETIQ C BARRA FIEMB 2C 7.2X6.8CM 1000U 5R",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"Cod_Barra"        
+    },
+    {
+        "fotos":"assets/img/2.jpg",
+        "sku":"10000102007",
+        "producto":"ETIQ BARRA P PREPA 2C 7.2X6.8CM 1000U 5R",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"Cod_Barra"
+    },
+    {
+        "fotos":"assets/img/5.jpg",
+        "sku":"10000107505",
+        "producto":"ETIQ C BARR QUESER 2C 7.2X6.8CM 1000U 5R",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"Cod_Barra"
+    },
+    {
+        "fotos":"assets/img/6.jpg",
+        "sku":"10000107506",
+        "producto":"ETIQ BARR SEL QUESO 2C7.2X6.8CM 1000U 5R",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"Cod_Barra"
+    },
+    {
+        "fotos":"",
+        "sku":"10000109526",
+        "producto":"ETIQ BARR TORTAS PRE  7.2x6.8CM 1000U 5R",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"Cod_Barra"
+    },
+    {
+        "fotos":"assets/img/1.jpg",
+        "sku":"10000101503",
+        "producto":"ETIQ BARRA FFYVV  2C 7.2X6.8CM 1000U R5",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"Cod_Barra"
+    },
+    {
+        "fotos":"assets/img/3.jpg",
+        "sku":"10000101504",
+        "producto":"ETIQ C BARRA LACTE 2C 7.2X6.8CM 1000U R5",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"Cod_Barra"
+    },
+    {
+        "fotos":"assets/img/4.jpg",
+        "sku":"10000101505",
+        "producto":"ETIQ C BARRA PASTE 2C 7.2X6.8CM 1000U R5",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"Cod_Barra"
+    },
+    {
+        "fotos":"assets/img/7.jpg",
+        "sku":"10000101501",
+        "producto":"ETIQ   PAR CHEAF2 COL DE 5X8 CM 1000U R5",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"Varios"
+    },
+    {
+        "fotos":"assets/img/85.jpg",
+        "sku":"10000101502",
+        "producto":"SATO 2 COL 2.3X1.6CM CHEAF 500U R200",
+        "rollos":"200",
+        "unidadesRollo":"500",
+        "grupo":"Satos"
     }
-
 ]
