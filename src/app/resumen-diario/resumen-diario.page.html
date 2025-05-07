@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>ResumenDiario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">ResumenDiario</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <a routerLink="/home">Volver</a>
+
+<!--Tabla correspondiente al resumen diario-->
+<ion-grid>
+  <ion-row>
+    <ion-col>Fecha Emision</ion-col>
+    <ion-col>Grupo</ion-col>
+    <ion-col>SKU</ion-col>
+    <ion-col>Etiqueta/Producto</ion-col>
+    <ion-col>Rollos</ion-col>
+    <ion-col>CajasTotales</ion-col>
+  </ion-row>
+
+  <ion-row>
+   <ion-col>5/5/2025</ion-col>
+   <ion-col>Cod_Barra</ion-col>
+   <ion-col>#########</ion-col>
+   <ion-col>BarraFFYVV</ion-col>
+   <ion-col>50</ion-col>
+   <ion-col>10</ion-col> 
+  </ion-row>
+</ion-grid>
+</ion-content>
