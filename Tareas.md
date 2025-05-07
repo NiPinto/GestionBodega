@@ -1,7 +1,7 @@
 ------------------------------------
 TAREAS A REALIZAR
 ------------------------------------
-*FRONTEND
+*FRONTEND*
 1.- Agregar el css correspondiente a los distintas páginas
 2.- Agregar el css correspondiente a los componentes 
 3.- Investigar sobre la vista de los componentes para mostrar las páginas en el home
