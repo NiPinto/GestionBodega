@@ -13,9 +13,21 @@
 
   <a routerLink="/home">Volver</a>
 
+
+  <div class="container-filter">
+    <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="buscarPorTexto()" placeholder="Ingrese nombre de etiqueta"></ion-searchbar>
+    <ion-select [(ngModel)]="selectedGrupo" name="select">
+      <ion-select-option *ngFor="let grupo of uniqueGrupos" [value]="grupo">{{grupo}}</ion-select-option>
+      <ion-select-option value="">Todos</ion-select-option>
+    </ion-select>
+    <ion-button (click)="buscarProductosPorGrupo()">Buscar</ion-button>
+  </div>
+
 <ion-grid>
-  <ion-row>
+  <ion-row  class="row-header">
+    <ion-col>Imagen</ion-col>
     <ion-col>SKU</ion-col>
+    <ion-col>Grupo</ion-col>
     <ion-col>Etiqueta/Producto</ion-col>
     <ion-col>Rollos</ion-col>
     <ion-col>Rollos Totales</ion-col>
@@ -23,13 +35,15 @@
     <ion-col>Edicion</ion-col>
   </ion-row>
 
-  <ion-row>
-    <ion-col>#########</ion-col>
-    <ion-col>FFYVV</ion-col>
-    <ion-col>5</ion-col>
-    <ion-col>20</ion-col>
-    <ion-col>4</ion-col>
-    <ion-col>eliminar/editar</ion-col>
+  <ion-row *ngFor="let item of productosFiltrados">
+    <ion-col class="colorEti"><img [src]="item.fotos" alt="{{ item.sku }}"></ion-col>
+    <ion-col>{{ item.sku }}</ion-col>
+    <ion-col>{{item.grupo}}</ion-col>
+    <ion-col>{{ item.producto }}</ion-col>
+    <ion-col>{{ item.rollos }}</ion-col>
+    <ion-col>{{item.rollosT}}</ion-col>
+    <ion-col>{{item.cajaT}}</ion-col>
+    <ion-col><a>Elimar</a> <a>Agregar</a></ion-col>
   </ion-row>
 </ion-grid>
 

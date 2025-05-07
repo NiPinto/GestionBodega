@@ -8,7 +8,7 @@
 
   <main>
     <div class="container-filter">
-      <ion-searchbar placeholder="Ingrese nombre de etiqueta"></ion-searchbar>
+      <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="buscarPorTexto()" placeholder="Ingrese nombre de etiqueta"></ion-searchbar>
       <ion-select [(ngModel)]="selectedGrupo" name="select">
         <ion-select-option *ngFor="let grupo of uniqueGrupos" [value]="grupo">{{grupo}}</ion-select-option>
         <ion-select-option value="">Todos</ion-select-option>

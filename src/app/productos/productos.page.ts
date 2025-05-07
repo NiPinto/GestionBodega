@@ -9,11 +9,23 @@ import { JsonDataService } from '../services/json-data.service';
 })
 export class ProductosPage implements OnInit {
 
+  searchTerm: string = '';
   jsonData: any[] = [];
   uniqueGrupos: any[] = [];
 
   constructor(private jsonDataService: JsonDataService) { }
   
+  buscarPorTexto() {
+    const term = this.searchTerm.toLowerCase();
+  
+    this.productosFiltrados = this.jsonData.filter(item =>
+      item.producto.toLowerCase().includes(term) ||
+      item.sku.toLowerCase().includes(term) ||
+      item.grupo.toLowerCase().includes(term)
+    );
+  }
+
+
   selectedGrupo: string = '';
   productosFiltrados: any[] = [];
   
