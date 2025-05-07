@@ -479,5 +479,365 @@
         "rollos":"10",
         "unidadesRollo":"1000",
         "grupo":"Color3x3"
+    },
+    {
+        "fotos":"assets/img/70.jpg",
+        "sku":"10000117013",
+        "producto":"ETIQUETA SATO BLANCO 23X16MM 1000U R10 ",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/72.jpg",
+        "sku":"10000117014",
+        "producto":"ETIQUETA SATO NARANJO 23X16MM 1000U R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/69.jpg",
+        "sku":"10000117015",
+        "producto":"ETIQUETA SATO AMARILLO 23X16MM 1000U R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/71.jpg",
+        "sku":"10000117016",
+        "producto":"ETIQUETA SATO AZUL 23X16MM 1000U R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/74.jpg",
+        "sku":"69107",
+        "producto":"ETIQU COLOR ROJO 2.5 DIAMETRO  1000U R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Color_2.5"
+    },
+    {
+        "fotos":"assets/img/75.jpg",
+        "sku":"10000116000",
+        "producto":"ETIQ COLOR VERDE 2.5 DIAMETRO  1000U R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Color_2.5"
+    },
+    {
+        "fotos":"assets/img/76.jpg",
+        "sku":"10000116001",
+        "producto":"ETIQU COLOR AZUL 2.5 DIAMETRO  1000U R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Color_2.5"
+    },
+    {
+        "fotos":"assets/img/77.jpg",
+        "sku":"10000116002",
+        "producto":"ETIQUET COLOR AMARILLO 2.5 DIAME  1000U.",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Color_2.5"
+    },
+    {
+        "fotos":"assets/img/50.jpg",
+        "sku":"69112",
+        "producto":"ETIQ FECHA DESCONGELA 2.5X1.5CM 600U R10",
+        "rollos":"10",
+        "unidadesRollo":"600",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/52.jpg",
+        "sku":"57060",
+        "producto":"SATO AMARLI APERTURA PRODUCTOS 600UN R10",
+        "rollos":"10",
+        "unidadesRollo":"600",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/49.jpg",
+        "sku":"10000007502",
+        "producto":"ETIQ. SATO REFRESH VERDE ROLLO 800U R10",
+        "rollos":"10",
+        "unidadesRollo":"600",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"",
+        "sku":"10000116504",
+        "producto":"ETIQ. SATO VERDE DESCONGE/VENCI 800U R10",
+        "rollos":"10",
+        "unidadesRollo":"600",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/51.jpg",
+        "sku":"10000026507",
+        "producto":"ETIQUETA SATO REFRIGERACION 600U R10",
+        "rollos":"10",
+        "unidadesRollo":"600",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/8.jpg",
+        "sku":"10000076501",
+        "producto":"ETIQ CONTR INTERN SISA 22X32MM 5000U R10",
+        "rollos":"10",
+        "unidadesRollo":"5000",
+        "grupo":"Varios"
+    },
+    {
+        "fotos":"assets/img/11.jpg",
+        "sku":"59036",
+        "producto":"PRIORIZAR INGRES CAMAR 5X5 CM 1000U  R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Varios"
+    },
+    {
+        "fotos":"assets/img/12.jpg",
+        "sku":"59037",
+        "producto":"SATO RECEPCION CONTROL TEMPERATURA 600U R10",
+        "rollos":"10",
+        "unidadesRollo":"600",
+        "grupo":"Varios"
+    },
+    {
+        "fotos":"assets/img/24.jpg",
+        "sku":"47054",
+        "producto":"ETIQ IMPRESA 3 LINEAS 3 X2.7 CM 600U R10",
+        "rollos":"10",
+        "unidadesRollo":"600",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/89.jpg",
+        "sku":"10000114063",
+        "producto":"ETIQ IMPR 3 LINEAS 3X2.7 CM 600U R10 SAP",
+        "rollos":"10",
+        "unidadesRollo":"600",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/42.jpg",
+        "sku":"10000089683",
+        "producto":"ETIQ BAJAS TEMPERATURAS 40X28MM 500U 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/53.jpg",
+        "sku":"69135",
+        "producto":"ETIQ ELABORAC VENCI 1.2X2.2CM  1000U R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/54.jpg",
+        "sku":"69136",
+        "producto":"ETIQ JUMBO 1.6X2.2CM 1COLOR 1000U R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/55.jpg",
+        "sku":"69134",
+        "producto":"ETIQ DEGUSTACION 1,6X2,2CM1000U R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/87.jpg",
+        "sku":"10000115007",
+        "producto":"ETIQUE ANTES DESPUES 2.3X1.6CM1000UN R10",
+        "rollos":"10",
+        "unidadesRollo":"1000",
+        "grupo":"Satos"
+    },
+    {
+        "fotos":"assets/img/56.jpg",
+        "sku":"10000097882",
+        "producto":"ETIQUETA CIRCULAR ELABORACION PROPIA",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Varios"
+    },
+    {
+        "fotos":"assets/img/83.jpg",
+        "sku":"10000114068",
+        "producto":"STICKER JUMBO CENCOSUD 4CM 500UN 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Varios"
+    },
+    {
+        "fotos":"assets/img/57.jpg",
+        "sku":"10000049511",
+        "producto":"STICKER 7X7 FRESCOS 1000UN RLL",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"PuntoCL"
+    },
+    {
+        "fotos":"assets/img/58.jpg",
+        "sku":"10000049512",
+        "producto":"STICKER 7X7 FRAGILES 1000UN RLL",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"PuntoCL"
+    },
+    {
+        "fotos":"assets/img/59.jpg",
+        "sku":"10000049513",
+        "producto":"STICKER 7X7 REUTILIZADA 1000UN RLL",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"PuntoCL"
+    },
+    {
+        "fotos":"assets/img/60.jpg",
+        "sku":"10000049510",
+        "producto":"STICKER 7X7 CONGELADOS 1000UN RLL",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"PuntoCL"
+    },
+    {
+        "fotos":"assets/img/61.jpg",
+        "sku":"10000086004",
+        "producto":"STICKER PICHANGA ROLLO DE 500U 5R ",
+        "rollos":"5",
+        "unidadesRollo":"500",
+        "grupo":"EncurV1"
+    },
+    {
+        "fotos":"assets/img/62.jpg",
+        "sku":"10000086000",
+        "producto":"STICKER PEPINILLO/PEPINO ROLLO 500U 5R ",
+        "rollos":"5",
+        "unidadesRollo":"500",
+        "grupo":"EncurV1"
+    },
+    {
+        "fotos":"assets/img/63.jpg",
+        "sku":"10000086003",
+        "producto":"STICKER  PICKLES ROLLO DE 500U 5R",
+        "rollos":"5",
+        "unidadesRollo":"500",
+        "grupo":"EncurV1"
+    },
+    {
+        "fotos":"assets/img/64.jpg",
+        "sku":"10000086001",
+        "producto":"STICKER ACEITUNAS ROLLO DE 500U 5R ",
+        "rollos":"5",
+        "unidadesRollo":"500",
+        "grupo":"EncurV1"
+    },
+    {
+        "fotos":"assets/img/65.jpg",
+        "sku":"10000086002",
+        "producto":"STICKER CHUCRUT ROLLO DE 500U 5R",
+        "rollos":"5",
+        "unidadesRollo":"500",
+        "grupo":"EncurV1"
+    },
+    {
+        "fotos":"assets/img/93.jpg",
+        "sku":"10000114064",
+        "producto":"ETIQUETA ESPECIALIDADES 8X8CM 500UN 5R",
+        "rollos":"5",
+        "unidadesRollo":"500",
+        "grupo":"EncurV2"
+    },
+    {
+        "fotos":"assets/img/91.jpg",
+        "sku":"10000114065",
+        "producto":"ETIQUETA ACEITUNAS 8X8CM 500UN 5R",
+        "rollos":"5",
+        "unidadesRollo":"500",
+        "grupo":"EncurV2"
+    },
+    {
+        "fotos":"assets/img/94.jpg",
+        "sku":"10000114066",
+        "producto":"ETIQUETA PEPINILLO 8X8CM500UN 5R",
+        "rollos":"5",
+        "unidadesRollo":"500",
+        "grupo":"EncurV2"
+    },
+    {
+        "fotos":"assets/img/92.jpg",
+        "sku":"10000114067",
+        "producto":"ETIQUETA PICHANGA 8X8CM 500UN 5R",
+        "rollos":"5",
+        "unidadesRollo":"500",
+        "grupo":"EncurV2"
+    },
+    {
+        "fotos":"assets/img/66.jpg",
+        "sku":"10000067500",
+        "producto":"STICKER LEY ALCOHOL ROLLO 1000 UN 7X7",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"Varios"
+    },
+    {
+        "fotos":"assets/img/81.jpg",
+        "sku":"10000114500",
+        "producto":"STICKER CONTRO DE ALIMENTOS 5x5CM 1000UN 5R ",
+        "rollos":"5",
+        "unidadesRollo":"1000",
+        "grupo":"Varios"
+    },
+    {
+        "fotos":"assets/img/103.jpg",
+        "sku":"10000115504",
+        "producto":"ETIQ SEGURI JUMBO ROJA 2.5X12CM 330U R76",
+        "rollos":"76",
+        "unidadesRollo":"330",
+        "grupo":"Seguridad"
+    },
+    {
+        "fotos":"assets/img/101.jpg",
+        "sku":"10000115505",
+        "producto":"ETIQ SEGURI JUMBO AMAR 2.5X12CM 330U R76",
+        "rollos":"76",
+        "unidadesRollo":"330",
+        "grupo":"Seguridad"
+    },
+    {
+        "fotos":"assets/img/102.jpg",
+        "sku":"10000115506",
+        "producto":"ETIQ SEGURI JUMBO AZUL 2.5X12CM 330U R76",
+        "rollos":"76",
+        "unidadesRollo":"330",
+        "grupo":"Seguridad"
+    },
+    {
+        "fotos":"assets/img/100.jpg",
+        "sku":"10000115507",
+        "producto":"ETIQ SEGURI JUMBO VERD 2.5X12CM 330U R76",
+        "rollos":"76",
+        "unidadesRollo":"330",
+        "grupo":"Seguridad"
+    },
+    {
+        "fotos":"",
+        "sku":"10000054001",
+        "producto":"STICKER MESON CARNICERIA 500UN 10R",
+        "rollos":"10",
+        "unidadesRollo":"500",
+        "grupo":"Varios"
     }
 ]
