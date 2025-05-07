@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { JsonDataService } from '../services/json-data.service';
+import { EditrolloComponent } from '../componentes/editrollo/editrollo.component';
+import { BorrartrolloComponent } from '../componentes/borrartrollo/borrartrollo.component';
+import { ModalController } from '@ionic/angular';
 @Component({
   selector: 'app-inventario',
   templateUrl: './inventario.page.html',
@@ -12,7 +15,7 @@ export class InventarioPage implements OnInit {
   jsonData: any[] = [];
   uniqueGrupos: any[] = [];
 
-  constructor(private jsonDataService: JsonDataService) { }
+  constructor(private jsonDataService: JsonDataService,private modalCtrl: ModalController) { }
   
   buscarPorTexto() {
     const term = this.searchTerm.toLowerCase();
@@ -44,5 +47,38 @@ export class InventarioPage implements OnInit {
     
     });
     
+  }
+
+
+  async abrirModalAgregar(item: any) {
+    const modal = await this.modalCtrl.create({
+      component: EditrolloComponent,
+      componentProps: {
+        producto: item
+      }
+    });
+  
+    await modal.present();
+  
+    const { data } = await modal.onDidDismiss();
+    if (data && data.cantidad) {
+      item.rollosT += data.cantidad;
+    }
+  }
+
+  async abrirModalEliminar(item: any) {
+    const modal = await this.modalCtrl.create({
+      component: BorrartrolloComponent,
+      componentProps: {
+        producto: item
+      }
+    });
+  
+    await modal.present();
+  
+    const { data } = await modal.onDidDismiss();
+    if (data && data.cantidad) {
+      item.rollosT -= data.cantidad;
+    }
   }
 }

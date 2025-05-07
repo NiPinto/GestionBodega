@@ -43,7 +43,7 @@
     <ion-col>{{ item.rollos }}</ion-col>
     <ion-col>{{item.rollosT}}</ion-col>
     <ion-col>{{item.cajaT}}</ion-col>
-    <ion-col><a>Elimar</a> <a>Agregar</a></ion-col>
+    <ion-col><a (click)="abrirModalEliminar(item)">Elimar</a>/<a (click)="abrirModalAgregar(item)">Agregar</a></ion-col>
   </ion-row>
 </ion-grid>
 
