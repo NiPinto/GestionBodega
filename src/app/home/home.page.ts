@@ -8,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  mostrar: boolean = false; 
+
+  toggleContenido() {
+    this.mostrar = !this.mostrar; 
+  }
+
   constructor() {}
 
 }
+

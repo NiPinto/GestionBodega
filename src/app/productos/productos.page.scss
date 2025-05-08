@@ -4,7 +4,9 @@
     text-align: center;
     padding: 10px;
     display: flex;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 9;
 }
 
 
@@ -29,11 +31,11 @@
 }
 
 ion-content {
-    --background: var(--primary-color);
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Inter";
+    font-weight: 400;
 }
 
 main {
@@ -84,10 +86,9 @@ ion-col img {
 } 
 
 ion-grid {
-    background-color: #113b8f;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 0;
-    
+    opacity: 1;
 }
 
 .row-header {
@@ -112,4 +113,13 @@ ion-button {
     padding: 0.5rem 1rem;
     font-size: 16px;
     font-weight: bold;
+}
+
+.background-fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }

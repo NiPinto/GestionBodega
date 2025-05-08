@@ -1,12 +1,13 @@
 
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" >
   <header class="header-productos">
     <a routerLink="/home"><img src="/assets/icon/back.svg"></a>
-    <h1>PRODUCTOS</h1>
+    <h1>Productos</h1>
   </header>
 
   <main>
+    <div class="background-fixed gradient-background"></div>
     <div class="container-filter">
       <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="buscarPorTexto()" placeholder="Ingrese nombre de etiqueta"></ion-searchbar>
       <ion-select [(ngModel)]="selectedGrupo" name="select">
@@ -15,23 +16,25 @@
       </ion-select>
       <ion-button (click)="buscarProductosPorGrupo()">Buscar</ion-button>
     </div>
-    <ion-grid>
-      <ion-row class="row-header">
-        <ion-col>Fotos</ion-col>
-        <ion-col>SKU</ion-col>
-        <ion-col>Producto</ion-col>
-        <ion-col>RollosXCaja</ion-col>
-        <ion-col>UnidadesXRollo</ion-col>
-        <ion-col>Grupo</ion-col>
-      </ion-row>
-      <ion-row *ngFor="let item of productosFiltrados">
-        <ion-col class="colorEti"><img [src]="item.fotos" alt="{{ item.sku }}"></ion-col>
-        <ion-col class="colorEti">{{item.sku}}</ion-col>
-        <ion-col class="colorEti">{{item.producto}}</ion-col>
-        <ion-col class="colorEti">{{item.rollos}}</ion-col>
-        <ion-col class="colorEti">{{item.unidadesRollo}}</ion-col>
-        <ion-col class="colorEti">{{item.grupo}}</ion-col>
-      </ion-row>
-    </ion-grid>
+    <div class="container-table card-glass">
+      <ion-grid class="background-gradient">
+        <ion-row class="row-header">
+          <ion-col>Fotos</ion-col>
+          <ion-col>SKU</ion-col>
+          <ion-col>Producto</ion-col>
+          <ion-col>RollosXCaja</ion-col>
+          <ion-col>UnidadesXRollo</ion-col>
+          <ion-col>Grupo</ion-col>
+        </ion-row>
+        <ion-row *ngFor="let item of productosFiltrados">
+          <ion-col class="colorEti"><img [src]="item.fotos" alt="{{ item.sku }}"></ion-col>
+          <ion-col class="colorEti">{{item.sku}}</ion-col>
+          <ion-col class="colorEti">{{item.producto}}</ion-col>
+          <ion-col class="colorEti">{{item.rollos}}</ion-col>
+          <ion-col class="colorEti">{{item.unidadesRollo}}</ion-col>
+          <ion-col class="colorEti">{{item.grupo}}</ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </main>
 </ion-content>

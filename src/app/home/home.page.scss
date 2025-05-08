@@ -12,10 +12,11 @@ ion-toolbar {
 
 main {
   display: flex;
-  background-color: var(--primary-color);
+  background-color: #0b275d;
   height: 100%;
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter";
+  font-weight: 400;
 }
 
 a {
@@ -26,12 +27,14 @@ a {
 #bar-container {
   appearance: none;
   text-decoration: none;
-  background-color: #113b8f;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(11, 39, 93, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
   display: flex;
   flex-direction: column;
-  
   margin: 1rem;
-  border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -57,6 +60,8 @@ a {
   padding: 0;
   gap: 10px;
   text-align: center;
+  font-weight: 600;
+  opacity: 1;
   border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 }
 
@@ -69,6 +74,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 0 1rem;
+  transition: 0.2s ease;
 }
 
 #bar-container ul li a:hover {
@@ -91,9 +97,12 @@ a {
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: #113b8f;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(11, 39, 93, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
   margin: 1rem 1rem 1rem 0;
-  border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -111,6 +120,78 @@ a {
   position: fixed;
   bottom: 0;
   right: 0;
-  margin: 2rem;
+  margin: 3rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+}
+ 
+#btn-qr:hover {
+  scale: 1.05;
+}
+
+#btn-qr:active {
+  scale: 0.95;
+  transition: 0.2s ease;
+}
+
+.icon-img {
+  width: 50px;
+  height: 50px;
+  filter: invert(1);
+  opacity: 0.5;
+  transition: 0.3s ease;
+  position: absolute;
+}
+
+.icon-img.visible {
+  opacity: 0.5;
+  transform: scale(1);
+  z-index: 2;
+}
+
+.icon-img.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.dropdown-button {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 10.5rem;
+  right: 2rem;
+  gap: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.dropdown-button a {
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 600;
+  border-radius: 1rem;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-button a:hover {
+  scale: 1.05;
+}
+
+.dropdown-button a:active {
+  scale: 0.95;
+}
+
+.oculto {
+  transform: translateY(25%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
 }

@@ -6,3 +6,36 @@
     --secondary-color: #eae121;
     --tertiary-color: #eef7f7;
 }
+
+@font-face {
+    font-family: 'Inter';
+    src: url("/assets/fonts/Inter-VariableFont_opsz,wght.ttf");
+}
+
+.gradient-background {
+    background-color: #0b275d;
+    background-image: 
+      radial-gradient(at 47% 33%, hsl(222.00, 0%, 100%) 0, transparent 59%), 
+      radial-gradient(at 82% 65%, hsl(55.36, 94%, 54%) 0, transparent 55%);
+    position: relative;
+}
+
+.gradient-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(11, 39, 93, 0.35);
+    backdrop-filter: blur(16px) saturate(120%);
+    z-index: 0;
+}
+
+.card-glass {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 39, 93, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
