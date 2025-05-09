@@ -9,6 +9,7 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./inventario.page.scss'],
   standalone:false
 })
+
 export class InventarioPage implements OnInit {
 
   searchTerm: string = '';
