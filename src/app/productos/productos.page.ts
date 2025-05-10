@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { JsonDataService } from '../services/json-data.service';
+
+import { IonContent } from '@ionic/angular';
 
 @Component({
   selector: 'app-productos',
@@ -46,8 +48,5 @@ export class ProductosPage implements OnInit {
     
     });
     
-  }
-
-  
-
+  } 
 }
