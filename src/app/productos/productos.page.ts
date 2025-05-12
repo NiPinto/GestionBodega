@@ -10,13 +10,14 @@ import { IonContent } from '@ionic/angular';
   standalone:false
 })
 export class ProductosPage implements OnInit {
+@ViewChild('pageContent', { static: false }) pageContent!: IonContent;
 
   searchTerm: string = '';
   jsonData: any[] = [];
   uniqueGrupos: any[] = [];
 
   constructor(private jsonDataService: JsonDataService) { }
-  
+ 
   buscarPorTexto() {
     const term = this.searchTerm.toLowerCase();
   
@@ -48,5 +49,11 @@ export class ProductosPage implements OnInit {
     
     });
     
-  } 
+  }
+  
+    irArriba() {
+    // 300 ms de animación; a 0 va instantáneo
+    this.pageContent.scrollToTop(300);
+  }
+
 }
