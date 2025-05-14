@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BarcodeScanner } from '@capacitor-community/barcode-scanner';
-
+import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
 
 @Component({
   selector: 'app-qr',
@@ -10,20 +9,21 @@ import { BarcodeScanner } from '@capacitor-community/barcode-scanner';
 })
 export class QRPage{
 
-async enableScanner() {
-  const status = await BarcodeScanner.checkPermission({ force: true });
+async scanCode() {
+    try {
+      const result = await BarcodeScanner.scan();
 
-  if (status.granted) {
-    // Mostrar la cámara
-    await BarcodeScanner.hideBackground(); // Oculta fondo para que se vea la cámara
-    document.body.classList.add('scanner-active'); // Por CSS podés poner fondo negro, etc.
-    const result = await BarcodeScanner.startScan();
-
-    if (result.hasContent) {
-      console.log('Scanned:', result.content);
+    if (result.barcodes && result.barcodes.length > 0) {
+      const first = result.barcodes[0];
+      console.log('Código escaneado:', first.rawValue);
+      alert(`Código: ${first.rawValue}`);
+    } else {
+      alert('No se detectó ningún código.');
     }
-  } else {
-    alert('Permiso de cámara denegado');
+    } catch (error) {
+      console.error('Error al escanear:', error);
+      alert('Hubo un error al escanear el código.');
+    }
   }
-}
+
 }

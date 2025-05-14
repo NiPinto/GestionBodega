@@ -1,3 +1,15 @@
+
 .scanner-active {
+  ion-content,
+  ion-header,
+  ion-toolbar,
+  ion-title,
+  h1,
+  a,
+  ion-button,
+  div {
+    display: none !important;
+  }
+
   background: transparent !important;
 }
