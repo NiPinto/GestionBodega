@@ -5,15 +5,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Inventario</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+  
+<main>
+  <div class="background-fixed gradient-background"></div>
   <a routerLink="/home">Volver</a>
-
-
   <div class="container-filter">
     <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="buscarPorTexto()" placeholder="Ingrese nombre de etiqueta"></ion-searchbar>
     <ion-select [(ngModel)]="selectedGrupo" name="select">
@@ -23,28 +18,29 @@
     <ion-button (click)="buscarProductosPorGrupo()">Buscar</ion-button>
   </div>
 
-<ion-grid>
-  <ion-row  class="row-header">
-    <ion-col>Imagen</ion-col>
-    <ion-col>SKU</ion-col>
-    <ion-col>Grupo</ion-col>
-    <ion-col>Etiqueta/Producto</ion-col>
-    <ion-col>Rollos</ion-col>
-    <ion-col>Rollos Totales</ion-col>
-    <ion-col>Cajas Totales</ion-col>
-    <ion-col>Edicion</ion-col>
-  </ion-row>
+  <ion-grid class="background-gradient card-glass">
+    <ion-row  class="row-header">
+      <ion-col>Imagen</ion-col>
+      <ion-col>SKU</ion-col>
+      <ion-col>Grupo</ion-col>
+      <ion-col>Etiqueta/Producto</ion-col>
+      <ion-col>Rollos</ion-col>
+      <ion-col>Rollos Totales</ion-col>
+      <ion-col>Cajas Totales</ion-col>
+      <ion-col>Edicion</ion-col>
+    </ion-row>
 
-  <ion-row *ngFor="let item of productosFiltrados">
-    <ion-col class="colorEti"><img [src]="item.fotos" alt="{{ item.sku }}"></ion-col>
-    <ion-col>{{ item.sku }}</ion-col>
-    <ion-col>{{item.grupo}}</ion-col>
-    <ion-col>{{ item.producto }}</ion-col>
-    <ion-col>{{ item.rollos }}</ion-col>
-    <ion-col>{{item.rollosT}}</ion-col>
-    <ion-col>{{item.cajaT}}</ion-col>
-    <ion-col><a (click)="abrirModalEliminar(item)">Elimar</a>/<a (click)="abrirModalAgregar(item)">Agregar</a></ion-col>
-  </ion-row>
-</ion-grid>
+    <ion-row *ngFor="let item of productosFiltrados">
+      <ion-col class="colorEti"><img [src]="item.fotos" alt="{{ item.sku }}"></ion-col>
+      <ion-col class="colorEti">{{ item.sku }}</ion-col>
+      <ion-col class="colorEti">{{item.grupo}}</ion-col>
+      <ion-col class="colorEti">{{ item.producto }}</ion-col>
+      <ion-col class="colorEti">{{ item.rollos }}</ion-col>
+      <ion-col class="colorEti">{{item.rollosT}}</ion-col>
+      <ion-col class="colorEti">{{item.cajaT}}</ion-col>
+      <ion-col class="colorEti"><a (click)="abrirModalEliminar(item)">Elimar</a>/<a (click)="abrirModalAgregar(item)">Agregar</a></ion-col>
+    </ion-row>
+  </ion-grid>
+</main>
 
 </ion-content>
