@@ -27,6 +27,7 @@
       <ion-col>Rollos</ion-col>
       <ion-col>Rollos Totales</ion-col>
       <ion-col>Cajas Totales</ion-col>
+      <ion-col>Stock Crítico</ion-col>
       <ion-col>Edicion</ion-col>
     </ion-row>
 
@@ -38,6 +39,7 @@
       <ion-col class="colorEti">{{ item.rollos }}</ion-col>
       <ion-col class="colorEti">{{item.rollosT}}</ion-col>
       <ion-col class="colorEti">{{item.cajaT}}</ion-col>
+      <ion-col class="colorEti">{{item.stockCritico}}</ion-col>
       <ion-col class="colorEti"><a (click)="abrirModalEliminar(item)">Elimar</a>/<a (click)="abrirModalAgregar(item)">Agregar</a></ion-col>
     </ion-row>
   </ion-grid>
