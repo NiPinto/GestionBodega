@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,10 @@ export class HomePage {
     this.mostrar = !this.mostrar; 
   }
 
-  constructor() {}
+  constructor(private router: Router) {}
 
+  navigateTo(page: string) {
+    this.router.navigate([page]);
+  }
 }
 

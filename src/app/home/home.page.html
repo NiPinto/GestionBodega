@@ -20,8 +20,8 @@
         </li>
         <li>
           <a routerLink="/productos">
-          <img src="/assets/icon/items.svg"/>
-          Productos
+            <img src="/assets/icon/items.svg"/>
+            Productos
           </a>
         </li>
         <li>
@@ -33,37 +33,9 @@
       </ul>
     </section>
     <section id="container-principal">
-      <h1>Mi inventario</h1>
-      <ion-grid>
-        <ion-row class="row-header">
-          <ion-col>Imagen</ion-col>
-          <ion-col>SKU</ion-col>
-          <ion-col>Grupo</ion-col>
-          <ion-col>Etiqueta/Producto</ion-col>
-          <ion-col>Rollos</ion-col>
-          <ion-col>Rollos Totales</ion-col>
-          <ion-col>Cajas Totales</ion-col>
-          <ion-col>Edicion</ion-col>
-        </ion-row>
-        <ion-row class="row-content-inventory">
-          <ion-col><img src="/assets/img/0.jpg"></ion-col>
-          <ion-col>10000101015</ion-col>
-          <ion-col>ETIQ C BARRA BOLLE 2C 7.2X6.8CM 1000U 5R</ion-col>
-          <ion-col>ETIQ C BARRA BOLLE 2C 7.2X6.8CM 1000U 5R</ion-col>
-          <ion-col>5</ion-col>
-          <ion-col>1000</ion-col>
-          <ion-col>1</ion-col>
-          <ion-col id="edition-inventory"><a><img src="assets/icon/add-box.svg"></a><a><img src="assets/icon/trash.svg"></a></ion-col>
-        </ion-row>
-        <ion-row >
-          <ion-col class="msg-add">
-            <img src="/assets/icon/add.svg">
-            <p>Agrega más items con el boton amarillo</p>
-            
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-  
+      <ion-app>
+        <ion-router-outlet></ion-router-outlet>
+      </ion-app>
     </section>
 
     <button (click)="toggleContenido()" id="btn-qr" class="icon-btn">
