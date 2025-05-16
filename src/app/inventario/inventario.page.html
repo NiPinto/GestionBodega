@@ -1,48 +1,44 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Inventario</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  
-<main>
-  <div class="background-fixed gradient-background"></div>
-  <a routerLink="/home">Volver</a>
-  <div class="container-filter">
-    <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="buscarPorTexto()" placeholder="Ingrese nombre de etiqueta"></ion-searchbar>
-    <ion-select [(ngModel)]="selectedGrupo" name="select">
-      <ion-select-option *ngFor="let grupo of uniqueGrupos" [value]="grupo">{{grupo}}</ion-select-option>
-      <ion-select-option value="">Todos</ion-select-option>
-    </ion-select>
-    <ion-button (click)="buscarProductosPorGrupo()">Buscar</ion-button>
-  </div>
+  <header class="header-productos" id="header">
+    <a routerLink="/home"><img src="/assets/icon/back.svg"></a>
+    <h1>Inventario</h1>
+  </header>
+  <main>
+    <div class="background-fixed gradient-background"></div>
+    <div class="container-filter">
+      <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="buscarPorTexto()" placeholder="Ingrese nombre de etiqueta"></ion-searchbar>
+      <ion-select [(ngModel)]="selectedGrupo" name="select">
+        <ion-select-option *ngFor="let grupo of uniqueGrupos" [value]="grupo">{{grupo}}</ion-select-option>
+        <ion-select-option value="">Todos</ion-select-option>
+      </ion-select>
+      <ion-button (click)="buscarProductosPorGrupo()">Buscar</ion-button>
+    </div>
 
-  <ion-grid class="background-gradient card-glass">
-    <ion-row  class="row-header">
-      <ion-col>Imagen</ion-col>
-      <ion-col>SKU</ion-col>
-      <ion-col>Grupo</ion-col>
-      <ion-col>Etiqueta/Producto</ion-col>
-      <ion-col>Rollos</ion-col>
-      <ion-col>Rollos Totales</ion-col>
-      <ion-col>Cajas Totales</ion-col>
-      <ion-col>Stock Crítico</ion-col>
-      <ion-col>Edicion</ion-col>
-    </ion-row>
+    <ion-grid class="background-gradient card-glass">
+      <ion-row  class="row-header">
+        <ion-col>Imagen</ion-col>
+        <ion-col>SKU</ion-col>
+        <ion-col>Grupo</ion-col>
+        <ion-col>Etiqueta/Producto</ion-col>
+        <ion-col>Rollos</ion-col>
+        <ion-col>Rollos Totales</ion-col>
+        <ion-col>Cajas Totales</ion-col>
+        <ion-col>Stock Crítico</ion-col>
+        <ion-col>Edicion</ion-col>
+      </ion-row>
 
-    <ion-row *ngFor="let item of productosFiltrados">
-      <ion-col class="colorEti"><img [src]="item.fotos" alt="{{ item.sku }}"></ion-col>
-      <ion-col class="colorEti">{{ item.sku }}</ion-col>
-      <ion-col class="colorEti">{{item.grupo}}</ion-col>
-      <ion-col class="colorEti">{{ item.producto }}</ion-col>
-      <ion-col class="colorEti">{{ item.rollos }}</ion-col>
-      <ion-col class="colorEti">{{item.rollosT}}</ion-col>
-      <ion-col class="colorEti">{{item.cajaT}}</ion-col>
-      <ion-col class="colorEti">{{item.stockCritico}}</ion-col>
-      <ion-col class="colorEti"><a (click)="abrirModalEliminar(item)">Elimar</a>/<a (click)="abrirModalAgregar(item)">Agregar</a></ion-col>
-    </ion-row>
-  </ion-grid>
-</main>
+      <ion-row *ngFor="let item of productosFiltrados">
+        <ion-col class="colorEti"><img [src]="item.fotos" alt="{{ item.sku }}"></ion-col>
+        <ion-col class="colorEti">{{ item.sku }}</ion-col>
+        <ion-col class="colorEti">{{item.grupo}}</ion-col>
+        <ion-col class="colorEti">{{ item.producto }}</ion-col>
+        <ion-col class="colorEti">{{ item.rollos }}</ion-col>
+        <ion-col class="colorEti">{{item.rollosT}}</ion-col>
+        <ion-col class="colorEti">{{item.cajaT}}</ion-col>
+        <ion-col class="colorEti">{{item.stockCritico}}</ion-col>
+        <ion-col class="colorEti"><a (click)="abrirModalEliminar(item)">Elimar</a>/<a (click)="abrirModalAgregar(item)">Agregar</a></ion-col>
+      </ion-row>
+    </ion-grid>
+  </main>
 
 </ion-content>

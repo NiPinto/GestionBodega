@@ -44,6 +44,8 @@ export class InventarioPage implements OnInit {
     this.jsonDataService.getData().subscribe(data => {
       this.jsonData = data;
 
+      this.productosFiltrados = this.jsonData;
+
       this.uniqueGrupos = [...new Set(this.jsonData.map(item => item.grupo))];
     
     });
