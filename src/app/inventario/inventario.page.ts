@@ -40,15 +40,20 @@ export class InventarioPage implements OnInit {
   }
   
 
-  ngOnInit() {
-    this.jsonDataService.getData().subscribe(data => {
-      this.jsonData = data;
+  async ngOnInit() {
+  await this.jsonDataService.initDataFile(); // Asegura que el archivo exista
 
-      this.productosFiltrados = this.jsonData;
+  this.jsonDataService.getData().subscribe(data => {
+    this.jsonData = data.map(item => ({
+      ...item,
+      rollosT: parseInt(item.rollosT?.toString().trim()) || 0,
+      cajaT: parseInt(item.cajaT?.toString().trim()) || 0,
+      stockCritico: parseInt(item.stockCritico?.toString().trim()) || 0
+    }));
 
-      this.uniqueGrupos = [...new Set(this.jsonData.map(item => item.grupo))];
-    
-    });
+    this.productosFiltrados = [...this.jsonData];
+    this.uniqueGrupos = [...new Set(this.jsonData.map(item => item.grupo))];
+  });
     
   }
 
@@ -60,13 +65,21 @@ export class InventarioPage implements OnInit {
         producto: item
       }
     });
+
   
     await modal.present();
   
     const { data } = await modal.onDidDismiss();
-    if (data && data.cantidad) {
+  /*  if (data && data.cantidad) {
       item.rollosT += data.cantidad;
     }
+*/
+    if (data && data.cantidad) {
+    item.rollosT += data.cantidad;
+    item.cajaT = Math.floor(item.rollosT / item.rollos);
+    await this.jsonDataService.saveData(this.jsonData); // Guardar los cambios
+    }
+
   }
 
   async abrirModalEliminar(item: any) {
@@ -80,8 +93,17 @@ export class InventarioPage implements OnInit {
     await modal.present();
   
     const { data } = await modal.onDidDismiss();
-    if (data && data.cantidad) {
+    /*    if (data && data.cantidad) {
       item.rollosT -= data.cantidad;
-    }
+    } */
+    if (data && data.cantidad) {
+  item.rollosT -= data.cantidad;
+  item.cajaT = Math.floor(item.rollosT / item.rollos);
+  if (item.rollosT < 0) item.rollosT = 0; // evitar negativos
+  await this.jsonDataService.saveData(this.jsonData); // Guardar cambios
+}
   }
+  
+
+  
 }
