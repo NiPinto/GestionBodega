@@ -90,11 +90,7 @@ a {
   height: 35px;
 }
 
-#container-principal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.contenedor {
   width: 100%;
   height: auto;
   backdrop-filter: blur(16px) saturate(180%);
@@ -104,9 +100,10 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.125);
   margin: 1rem 1rem 1rem 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: auto;
 } 
 
-#container-principal h1 {
+.contenedor h1 {
   text-transform: uppercase;
   font-weight: 900;
   opacity: 0.5;

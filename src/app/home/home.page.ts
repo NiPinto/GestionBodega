@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, ViewChild, ViewContainerRef } from '@angular/core';
+import { InventoryComponent } from '../inventory/inventory.component';
+import { ItemsComponent } from '../items/items.component';
+import { DiaryComponent } from '../diary/diary.component';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +10,8 @@ import { Router } from '@angular/router';
   standalone: false,
 })
 export class HomePage {
+  @ViewChild('contenedor', { read: ViewContainerRef, static: true })
+  contenedor!: ViewContainerRef;
 
   mostrar: boolean = false; 
 
@@ -15,10 +19,26 @@ export class HomePage {
     this.mostrar = !this.mostrar; 
   }
 
-  constructor(private router: Router) {}
+  constructor() {}
 
-  navigateTo(page: string) {
-    this.router.navigate([page]);
+  
+
+  mostrarComponente(nombre: string) {
+    this.contenedor.clear();
+
+    switch (nombre) {
+      case 'uno':
+        this.contenedor.createComponent(InventoryComponent);
+        break;
+      case 'dos':
+        this.contenedor.createComponent(ItemsComponent);
+        break;
+      case 'tres':
+        this.contenedor.createComponent(DiaryComponent);
+        break;
+    }
   }
+  
+  
 }
 
