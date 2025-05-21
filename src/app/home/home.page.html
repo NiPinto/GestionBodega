@@ -13,27 +13,27 @@
     <section id="bar-container">
       <ul>
         <li>
-          <a routerLink="/example">
+          <a (click)="mostrarComponente('uno')">
             <img src="/assets/icon/inventory.svg"/>
             Inventario
           </a>
         </li>
         <li>
-          <a routerLink="/productos">
+          <a (click)="mostrarComponente('dos')">
             <img src="/assets/icon/items.svg"/>
             Productos
           </a>
         </li>
         <li>
-          <a routerLink="/resumen-diario">
+          <a (click)="mostrarComponente('tres')">
             <img src="/assets/icon/items.svg"/>
             Resumen Diario
           </a>
         </li>
       </ul>
     </section>
-    <section id="container-principal">
-    
+    <section class="contenedor">
+      <ng-template #contenedor></ng-template>
     </section>
 
     <button (click)="toggleContenido()" id="btn-qr" class="icon-btn">

@@ -9,8 +9,12 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { InventoryComponent } from './inventory/inventory.component';
+import { ItemsComponent } from './items/items.component';
+import { DiaryComponent } from './diary/diary.component';
+
 @NgModule({
-  declarations: [AppComponent,EditrolloComponent,BorrartrolloComponent],
+  declarations: [AppComponent,EditrolloComponent,BorrartrolloComponent, InventoryComponent, ItemsComponent, DiaryComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule , FormsModule ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-diary',
   templateUrl: './diary.component.html',
   styleUrls: ['./diary.component.scss'],
+  standalone: false
 })
 export class DiaryComponent  implements OnInit {
 
