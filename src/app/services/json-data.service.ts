@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { firstValueFrom, from, Observable } from 'rxjs';
 
 const FILE_NAME = 'Productos.json';
-
+const RESUMEN_FILE = 'Resumen.json';
 @Injectable({ providedIn: 'root' })
 export class JsonDataService {
   constructor(private http: HttpClient) {}
@@ -55,4 +55,46 @@ getData(): Observable<any[]> {
       encoding: Encoding.UTF8,
     });
   }
+
+
+  //resumen config
+  async logMovimiento(accion: 'ingreso' | 'retiro', item: any, cantidad: number, cantCajaT : number) {
+  let Resumen: any[] = [];
+
+  try {
+    const resultResumen = await Filesystem.readFile({
+      path: RESUMEN_FILE,
+      directory: Directory.Data,
+      encoding: Encoding.UTF8
+    });
+
+    if (typeof resultResumen.data === 'string') {
+      Resumen = JSON.parse(resultResumen.data);
+    } else if (resultResumen.data instanceof Blob) {
+      const text = await resultResumen.data.text();
+      Resumen = JSON.parse(text);
+    }
+  } catch {
+    Resumen = []; // si el archivo no existe o está vacío
+  }
+
+  Resumen.push({
+    fecha: new Date().toISOString(),
+    accion,
+    grupo:item.grupo,
+    sku: item.sku,
+    producto: item.producto,
+    rollosT:cantidad,
+    //cajaT:item.cajaT,
+    cantCajaT,
+    cantidad
+  });
+
+  await Filesystem.writeFile({
+    path: RESUMEN_FILE,
+    data: JSON.stringify(Resumen),
+    directory: Directory.Data,
+    encoding: Encoding.UTF8
+  });
+}
 }
