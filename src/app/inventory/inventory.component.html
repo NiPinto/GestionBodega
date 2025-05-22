@@ -1,4 +1,4 @@
-
+<ion-content #pageContent>
   <main>
     <div class="container-filter">
       <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="buscarPorTexto()" placeholder="Ingrese nombre de etiqueta"></ion-searchbar>
@@ -31,8 +31,15 @@
         <ion-col class="colorEti">{{item.rollosT}}</ion-col>
         <ion-col class="colorEti">{{item.cajaT}}</ion-col>
         <ion-col class="colorEti">{{item.stockCritico}}</ion-col>
-        <ion-col class="colorEti" style="display: flex; flex-direction: column; gap: 0.5rem;"><a class="btn-edicion" (click)="abrirModalAgregar(item)"><img src="/assets/icon/add-box.svg">Agregar</a><a class="btn-edicion" (click)="abrirModalEliminar(item)"><img src="/assets/icon/trash.svg">Eliminar</a></ion-col>
+        <ion-col class="colorEti" style="display: flex; flex-direction: column; gap: 0.5rem;"><a class="btn-edicion" (click)="abrirModalAgregar(item)"><img src="/assets/icon/add-box.svg"></a><a class="btn-edicion" (click)="abrirModalEliminar(item)"><img src="/assets/icon/trash.svg"></a></ion-col>
       </ion-row>
     </ion-grid>
+
+    <ion-fab vertical="bottom" horizontal="start" slot="fixed" style="position: fixed;">
+      <ion-fab-button (click)="irArriba()">
+        <ion-icon src="/assets/icon/up.svg" ></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
   </main>
+</ion-content>
 

@@ -11,10 +11,27 @@
     </ion-toolbar>
   </ion-header>
 
-<h1> Presiona el botón para activar la Camara</h1>
-<a (click)="scanCode()">escanear</a>
-<ion-button (click)="scanCode()">Escanear</ion-button>
+
+<!-- <ion-button (click)="scanCode()">Escanear</ion-button> -->
 <div>
   <a routerLink="/home">Volver</a>
+</div>
+
+<div class="container-filter">
+  <h1> Presiona el botón para activar la Camara</h1>
+  <a (click)="scanCode()">escanear</a>
+  
+</div>
+<div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>Registro Escaner</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>SKU</ion-col>
+      <ion-col>Etiqueta</ion-col>
+      <ion-col>Cantidad Rollos</ion-col>
+    </ion-row>
+  </ion-grid>
 </div>
 </ion-content>
