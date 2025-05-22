@@ -1,3 +1,40 @@
-<p>
-  items works!
-</p>
+<ion-content #pageContent> 
+<main>
+  <div class="container-filter">
+    <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="buscarPorTexto()" placeholder="Ingrese nombre de etiqueta"></ion-searchbar>
+    <ion-select [(ngModel)]="selectedGrupo" name="select">
+      <ion-select-option *ngFor="let grupo of uniqueGrupos" [value]="grupo">{{grupo}}</ion-select-option>
+      <ion-select-option value="">Todos</ion-select-option>
+    </ion-select>
+    <ion-button (click)="buscarProductosPorGrupo()">Buscar</ion-button>
+  </div>
+  <div class="container-table card-glass">
+    <ion-grid class="background-gradient">
+      <ion-row class="row-header">
+        <ion-col>Fotos</ion-col>
+        <ion-col>SKU</ion-col>
+        <ion-col>Producto</ion-col>
+        <ion-col>RollosXCaja</ion-col>
+        <ion-col>UnidadesXRollo</ion-col>
+        <ion-col>Grupo</ion-col>
+      </ion-row>
+      <ion-row *ngFor="let item of productosFiltrados">
+        <ion-col class="colorEti"><img [src]="item.fotos" alt="{{ item.sku }}"></ion-col>
+        <ion-col class="colorEti">{{item.sku}}</ion-col>
+        <ion-col class="colorEti">{{item.producto}}</ion-col>
+        <ion-col class="colorEti">{{item.rollos}}</ion-col>
+        <ion-col class="colorEti">{{item.unidadesRollo}}</ion-col>
+        <ion-col class="colorEti">{{item.grupo}}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <!-- Boton para devolver al primer producto -->
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed" style="position: fixed;">
+    <ion-fab-button (click)="irArriba()">
+      <ion-icon src="/assets/icon/up.svg" ></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</main>
+</ion-content>

@@ -40,7 +40,7 @@ ion-col img {
     position: sticky;
     top: 0;
     z-index: 9;
-    background-color: #041c4b6e;
+    background-color: #041c4b;
     backdrop-filter: blur(10px);
 }
 
@@ -101,6 +101,16 @@ ion-button {
     font-weight: bold;
     display: flex;
     cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+    transition: all 0.2s ease;
+}
+
+.btn-edicion:hover {
+    scale: 1.05;
+}
+
+.btn-edicion:active {
+    scale: 0.95;
 }
 
 .btn-edicion img {
@@ -110,5 +120,5 @@ ion-button {
 }
 
 .btn-edicion:first-child {
-    background-color: #0e3279;
+    background-color: #1d4597;
 }

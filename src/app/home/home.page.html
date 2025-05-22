@@ -13,19 +13,19 @@
     <section id="bar-container">
       <ul>
         <li>
-          <a (click)="mostrarComponente('uno')">
+          <a (click)="mostrarComponente('uno'); setActivo('uno')" [ngClass]="{'active': activo === 'uno'}">
             <img src="/assets/icon/inventory.svg"/>
             Inventario
           </a>
         </li>
         <li>
-          <a (click)="mostrarComponente('dos')">
+          <a (click)="mostrarComponente('dos'); setActivo('dos')" [ngClass]="{'active': activo === 'dos'}">
             <img src="/assets/icon/items.svg"/>
             Productos
           </a>
         </li>
         <li>
-          <a (click)="mostrarComponente('tres')">
+          <a (click)="mostrarComponente('tres'); setActivo('tres')" [ngClass]="{'active': activo === 'tres'}">
             <img src="/assets/icon/items.svg"/>
             Resumen Diario
           </a>
@@ -36,20 +36,8 @@
       <ng-template #contenedor></ng-template>
     </section>
 
-    <button (click)="toggleContenido()" id="btn-qr" class="icon-btn">
-      <img src="assets/icon/add.svg"
-          class="icon-img"
-          [class.visible]="!mostrar"
-          [class.hidden]="mostrar">
-      <img src="assets/icon/remove.svg"
-          class="icon-img"
-          [class.visible]="mostrar"
-          [class.hidden]="!mostrar">
+    <button routerLink="/qr" id="btn-qr" class="icon-btn">
+      <img src="/assets/icon/camera.svg" class="icon-img">
     </button>
-
-    <div [ngClass]="{ 'oculto': !mostrar, 'visible': mostrar }" class="dropdown-button">
-      <a routerLink="/inventario" [ngClass]="{ 'oculto': !mostrar, 'visible': mostrar }">Ingreso manual</a>
-      <a routerLink="/qr" [ngClass]="{ 'oculto': !mostrar, 'visible': mostrar }" >Ingreso con cámara</a>
-    </div>
   </main>
 </ion-content>

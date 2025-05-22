@@ -1,3 +1,39 @@
-<p>
-  diary works!
-</p>
+<ion-content>
+  
+<div>
+  <ion-select [(ngModel)]="fechaSeleccionada" (ionChange)="buscarFecha()" placeholder="Filtrar por fecha">
+    <ion-select-option *ngFor="let fecha of fechas" [value]="fecha">
+      {{ fecha }}
+    </ion-select-option>
+  </ion-select>
+
+</div>
+
+<!--Tabla correspondiente al resumen diario-->
+  <main>
+    <div class="container-table card-glass">
+      <ion-grid>
+        <ion-row>
+          <ion-col>Fecha Emision</ion-col>
+          <ion-col>Accion</ion-col>
+          <ion-col>Grupo</ion-col>
+          <ion-col>SKU</ion-col>
+          <ion-col>Etiqueta/Producto</ion-col>
+          <ion-col>Rollos</ion-col>
+          <ion-col>CajasTotales</ion-col>
+        </ion-row>
+
+        <ion-row *ngFor="let mov of Filtrofecha">
+        <ion-col>{{ mov.fecha | date:'short' }}</ion-col>
+        <ion-col>{{mov.accion}}</ion-col>
+        <ion-col>{{mov.grupo}}</ion-col>
+        <ion-col>{{mov.sku}}</ion-col>
+        <ion-col>{{mov.producto}}</ion-col>
+        <ion-col>{{mov.rollosT}}</ion-col>
+        <ion-col>{{mov.cantCajaT}}</ion-col>
+        
+        </ion-row>
+      </ion-grid>
+    </div>
+  </main>
+</ion-content>

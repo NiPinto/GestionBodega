@@ -21,7 +21,9 @@ export class HomePage {
 
   constructor() {}
 
-  
+  ngOnInit() {
+    this.mostrarComponente('uno'); 
+  }
 
   mostrarComponente(nombre: string) {
     this.contenedor.clear();
@@ -37,6 +39,12 @@ export class HomePage {
         this.contenedor.createComponent(DiaryComponent);
         break;
     }
+  }
+
+  activo: string = '';
+
+  setActivo(nombre: string) {
+    this.activo = nombre;
   }
   
   
