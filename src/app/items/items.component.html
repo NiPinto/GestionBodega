@@ -17,6 +17,7 @@
         <ion-col>RollosXCaja</ion-col>
         <ion-col>UnidadesXRollo</ion-col>
         <ion-col>Grupo</ion-col>
+        <ion-col>Stock Crítico</ion-col>
       </ion-row>
       <ion-row *ngFor="let item of productosFiltrados">
         <ion-col class="colorEti"><img [src]="item.fotos" alt="{{ item.sku }}"></ion-col>
@@ -25,6 +26,7 @@
         <ion-col class="colorEti">{{item.rollos}}</ion-col>
         <ion-col class="colorEti">{{item.unidadesRollo}}</ion-col>
         <ion-col class="colorEti">{{item.grupo}}</ion-col>
+        <ion-col class="colorEti">{{item.stockCritico}}</ion-col>
       </ion-row>
     </ion-grid>
   </div>

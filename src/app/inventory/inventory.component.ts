@@ -53,7 +53,7 @@ export class InventoryComponent  implements OnInit {
       ...item,
       rollosT: parseInt(item.rollosT?.toString().trim()) || 0,
       cajaT: parseInt(item.cajaT?.toString().trim()) || 0,
-      stockCritico: parseInt(item.stockCritico?.toString().trim()) || 0
+      
     }));
 
     this.productosFiltrados = [...this.jsonData];

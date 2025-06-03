@@ -46,6 +46,11 @@ export class HomePage {
   setActivo(nombre: string) {
     this.activo = nombre;
   }
+
+  async productoCritico(){
+    //Alerta para mostrar estado de producto critico
+    
+  }
   
   
 }

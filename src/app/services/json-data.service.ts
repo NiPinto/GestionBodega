@@ -25,6 +25,14 @@ export class JsonDataService {
       await this.saveData(assetData);
     }
   }
+  async resetDataFromAssets(): Promise<void> {
+  await Filesystem.deleteFile({
+    path: FILE_NAME,
+    directory: Directory.Data,
+  });
+
+  await this.initDataFile(); // volverá a copiar desde assets
+}
 
   // Leer inventario como Observable
 getData(): Observable<any[]> {

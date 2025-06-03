@@ -6,6 +6,7 @@
         <ion-select-option *ngFor="let grupo of uniqueGrupos" [value]="grupo">{{grupo}}</ion-select-option>
         <ion-select-option value="">Todos</ion-select-option>
       </ion-select>
+      
       <ion-button (click)="buscarProductosPorGrupo()">Buscar</ion-button>
     </div>
 
