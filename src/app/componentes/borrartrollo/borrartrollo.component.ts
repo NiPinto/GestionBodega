@@ -20,4 +20,14 @@ export class BorrartrolloComponent {
     this.modalCtrl.dismiss();
   }
 
+  increment() {
+    this.cantidad++;
+  }
+
+  decrement() {
+    if (this.cantidad > 0) {
+      this.cantidad--;
+    }
+  }
+
 }

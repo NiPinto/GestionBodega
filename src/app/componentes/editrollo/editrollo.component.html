@@ -1,16 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Agregar Rollos</ion-title>
-    <ion-buttons slot="end">
-      <ion-button (click)="dismiss()">Cerrar</ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<main>
 
-<ion-content>
-  <ion-item>
-    <ion-label position="floating">Cantidad de rollos</ion-label>
-    <ion-input type="number" [(ngModel)]="cantidad"></ion-input>
-  </ion-item>
-  <ion-button expand="full" (click)="guardar()">Guardar</ion-button>
-</ion-content>
+  
+    <ion-toolbar class="card-glass">
+      <ion-title>AGREGAR ROLLOS</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="dismiss()">Cerrar</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  
+
+    
+    <div class="container-cantidad card-glass">
+      <ion-button class="button-cantidad" (click)="decrement()">-</ion-button>
+      <input type="number" min="0" id="cantidad-rollos" [(ngModel)]="cantidad" class="no-spin">
+      <ion-button class="button-cantidad" (click)="increment()">+</ion-button>
+    </div>
+
+      <ion-button expand="full" (click)="guardar()" class="button-cantidad">Guardar</ion-button>
+</main>
