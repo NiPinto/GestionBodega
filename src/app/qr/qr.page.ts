@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
+import { BarcodeScanner, BarcodeFormat } from '@capacitor-mlkit/barcode-scanning';
 import { JsonDataService } from '../services/json-data.service';
 @Component({
   selector: 'app-qr',
