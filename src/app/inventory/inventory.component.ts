@@ -4,6 +4,8 @@ import { EditrolloComponent } from '../componentes/editrollo/editrollo.component
 import { BorrartrolloComponent } from '../componentes/borrartrollo/borrartrollo.component';
 import { ModalController } from '@ionic/angular';
 import { IonContent } from '@ionic/angular';
+import { firstValueFrom } from 'rxjs';
+import { AlertController } from '@ionic/angular';
 
 
 @Component({
@@ -21,7 +23,7 @@ export class InventoryComponent  implements OnInit {
    @ViewChild('pageContent', { static: false }) pageContent!: IonContent;
 
 
-  constructor(private jsonDataService: JsonDataService,private modalCtrl: ModalController) { }
+  constructor(private jsonDataService: JsonDataService,private modalCtrl: ModalController,private alertCtrl: AlertController) { }
   
   buscarPorTexto() {
     const term = this.searchTerm.toLowerCase();
@@ -45,22 +47,41 @@ export class InventoryComponent  implements OnInit {
   }
   
 
-  async ngOnInit() {
-  await this.jsonDataService.initDataFile(); // Asegura que el archivo exista
+async ngOnInit() {
+  await this.jsonDataService.initDataFile();
 
-  this.jsonDataService.getData().subscribe(data => {
-    this.jsonData = data.map(item => ({
-      ...item,
-      rollosT: parseInt(item.rollosT?.toString().trim()) || 0,
-      cajaT: parseInt(item.cajaT?.toString().trim()) || 0,
-      
-    }));
+  const data = await firstValueFrom(this.jsonDataService.getData());
 
-    this.productosFiltrados = [...this.jsonData];
-    this.uniqueGrupos = [...new Set(this.jsonData.map(item => item.grupo))];
-  });
-    
+  this.jsonData = data.map(item => ({
+    ...item,
+    rollosT: parseInt(item.rollosT?.toString().trim()) || 0,
+    cajaT: parseInt(item.cajaT?.toString().trim()) || 0,
+  }));
+
+  this.productosFiltrados = [...this.jsonData];
+  this.uniqueGrupos = [...new Set(this.jsonData.map(item => item.grupo))];
+
+  const Stock_Critico = this.jsonData.filter(item => item.cajaT < item.stockCritico);
+  if (Stock_Critico.length > 0) {
+    await this.alertaStock(Stock_Critico);
   }
+}
+
+
+async alertaStock(productos: any[]) {
+  const lista = productos
+    .map(p => `• ${p.producto} Cajas de Stock: ${p.cajaT} / Stock Crítico: ${p.stockCritico}`)
+    .join('\n \n \n');
+
+  const alert = await this.alertCtrl.create({
+    header: 'Productos con Stock Crítico',
+    message: `⚠️ Los siguientes productos están por debajo del nivel crítico: \n\n\n   ${lista} \n `,
+    buttons: ['OK']
+  });
+
+  await alert.present();
+}
+
 
 
   async abrirModalAgregar(item: any) {
@@ -121,4 +142,21 @@ export class InventoryComponent  implements OnInit {
     this.pageContent.scrollToTop(300);
   }
   
+async resetearDatos() {
+  await this.jsonDataService.resetDataFromAssets();
+
+  // Volver a cargar la data actualizada en pantalla
+  this.jsonDataService.getData().subscribe(data => {
+    this.jsonData = data.map(item => ({
+      ...item,
+      rollosT: parseInt(item.rollosT?.toString().trim()) || 0,
+      cajaT: parseInt(item.cajaT?.toString().trim()) || 0,
+    }));
+
+    this.productosFiltrados = [...this.jsonData];
+    this.uniqueGrupos = [...new Set(this.jsonData.map(item => item.grupo))];
+  });
+}
+
+
 }

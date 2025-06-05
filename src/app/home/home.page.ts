@@ -2,6 +2,7 @@ import { Component, ViewChild, ViewContainerRef } from '@angular/core';
 import { InventoryComponent } from '../inventory/inventory.component';
 import { ItemsComponent } from '../items/items.component';
 import { DiaryComponent } from '../diary/diary.component';
+import { JsonDataService } from '../services/json-data.service';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,8 @@ export class HomePage {
   contenedor!: ViewContainerRef;
 
   mostrar: boolean = false; 
+
+  jsonData: any[] = [];
 
   toggleContenido() {
     this.mostrar = !this.mostrar; 
@@ -47,10 +50,7 @@ export class HomePage {
     this.activo = nombre;
   }
 
-  async productoCritico(){
-    //Alerta para mostrar estado de producto critico
-    
-  }
+
   
   
 }

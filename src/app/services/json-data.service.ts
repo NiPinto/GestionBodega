@@ -26,13 +26,19 @@ export class JsonDataService {
     }
   }
   async resetDataFromAssets(): Promise<void> {
-  await Filesystem.deleteFile({
-    path: FILE_NAME,
-    directory: Directory.Data,
-  });
+    try {
+      await Filesystem.deleteFile({
+        path: 'Productos.json',
+        directory: Directory.Data
+      });
+      console.log('Archivo eliminado correctamente.');
+    } catch (error) {
+      console.warn('No se pudo eliminar el archivo (puede que no exista).', error);
+    }
 
-  await this.initDataFile(); // volverá a copiar desde assets
-}
+    await this.initDataFile(); // Recarga desde assets
+  }
+
 
   // Leer inventario como Observable
 getData(): Observable<any[]> {

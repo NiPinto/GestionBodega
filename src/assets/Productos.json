@@ -28,7 +28,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -39,7 +39,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100",
-        "stockCritico":" ",
+        "stockCritico":"0",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -127,7 +127,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -138,7 +138,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -149,7 +149,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -160,7 +160,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -171,7 +171,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -182,7 +182,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -193,7 +193,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -204,7 +204,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -215,7 +215,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -226,7 +226,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -237,7 +237,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100_Mes",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -248,7 +248,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100_Mes",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -259,7 +259,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100_Mes",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -270,7 +270,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100_Mes",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -281,7 +281,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100_Mes",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -292,7 +292,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100_Mes",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -303,7 +303,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100_Mes",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -314,7 +314,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100_Mes",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -325,7 +325,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100_Mes",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -335,6 +335,7 @@
         "producto": "ETIQUETTA MES  OCTUBRE 9.5X9.5CM  500U 10R",
         "rollos": "10",
         "unidadesRollo": "500",
+        "stockCritico":"1",
         "grupo": "Circ_100_Mes",
         "rollosT": " ",
         "cajaT": " "
@@ -346,7 +347,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100_Mes",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -357,7 +358,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Circ_100_Mes",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -368,7 +369,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "Cod_Barra",
-        "stockCritico":" ",
+        "stockCritico":"10",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -379,7 +380,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "Cod_Barra",
-        "stockCritico":" ",
+        "stockCritico":"40",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -390,7 +391,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "Cod_Barra",
-        "stockCritico":" ",
+        "stockCritico":"6",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -401,7 +402,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "Cod_Barra",
-        "stockCritico":" ",
+        "stockCritico":"9",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -412,7 +413,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "Cod_Barra",
-        "stockCritico":" ",
+        "stockCritico":"8",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -423,7 +424,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "Cod_Barra",
-        "stockCritico":" ",
+        "stockCritico":"7",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -434,7 +435,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "Cod_Barra",
-        "stockCritico":" ",
+        "stockCritico":"60",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -445,7 +446,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "Cod_Barra",
-        "stockCritico":" ",
+        "stockCritico":"50",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -456,7 +457,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "Cod_Barra",
-        "stockCritico":" ",
+        "stockCritico":"15",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -467,7 +468,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "Varios",
-        "stockCritico":" ",
+        "stockCritico":"125",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -478,7 +479,7 @@
         "rollos": "200",
         "unidadesRollo": "500",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"7",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -489,7 +490,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"13",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -500,7 +501,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"3",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -511,7 +512,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"50",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -522,7 +523,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"60",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -533,7 +534,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Varios",
-        "stockCritico":" ",
+        "stockCritico":"3",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -544,7 +545,7 @@
         "rollos": "10",
         "unidadesRollo": "600",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"5",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -555,7 +556,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Varios",
-        "stockCritico":" ",
+        "stockCritico":"50",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -566,7 +567,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Color3x3",
-        "stockCritico":" ",
+        "stockCritico":"4",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -577,7 +578,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Color3x3",
-        "stockCritico":" ",
+        "stockCritico":"16",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -588,7 +589,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Color3x3",
-        "stockCritico":" ",
+        "stockCritico":"11",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -599,7 +600,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Color3x3",
-        "stockCritico":" ",
+        "stockCritico":"40",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -610,7 +611,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Color3x3",
-        "stockCritico":" ",
+        "stockCritico":"28",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -621,7 +622,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Color3x3",
-        "stockCritico":" ",
+        "stockCritico":"15",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -632,7 +633,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Color3x3",
-        "stockCritico":" ",
+        "stockCritico":"10",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -643,7 +644,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Color3x3",
-        "stockCritico":" ",
+        "stockCritico":"5",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -654,7 +655,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"6",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -665,7 +666,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"8",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -676,7 +677,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"5",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -687,7 +688,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"5",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -698,7 +699,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Color_2.5",
-        "stockCritico":" ",
+        "stockCritico":"10",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -709,7 +710,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Color_2.5",
-        "stockCritico":" ",
+        "stockCritico":"16",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -720,7 +721,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Color_2.5",
-        "stockCritico":" ",
+        "stockCritico":"12",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -731,7 +732,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Color_2.5",
-        "stockCritico":" ",
+        "stockCritico":"10",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -742,7 +743,7 @@
         "rollos": "10",
         "unidadesRollo": "600",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"4",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -753,7 +754,7 @@
         "rollos": "10",
         "unidadesRollo": "600",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"10",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -764,7 +765,7 @@
         "rollos": "10",
         "unidadesRollo": "600",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"4",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -775,7 +776,7 @@
         "rollos": "10",
         "unidadesRollo": "600",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"6",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -786,7 +787,7 @@
         "rollos": "10",
         "unidadesRollo": "600",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"4",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -797,7 +798,7 @@
         "rollos": "10",
         "unidadesRollo": "5000",
         "grupo": "Varios",
-        "stockCritico":" ",
+        "stockCritico":"5",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -808,7 +809,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Varios",
-        "stockCritico":" ",
+        "stockCritico":"5",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -819,7 +820,7 @@
         "rollos": "10",
         "unidadesRollo": "600",
         "grupo": "Varios",
-        "stockCritico":" ",
+        "stockCritico":"5",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -830,7 +831,7 @@
         "rollos": "10",
         "unidadesRollo": "600",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"3",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -841,7 +842,7 @@
         "rollos": "10",
         "unidadesRollo": "600",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"4",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -852,7 +853,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"3",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -863,7 +864,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"2",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -874,7 +875,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"40",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -885,7 +886,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"2",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -896,7 +897,7 @@
         "rollos": "10",
         "unidadesRollo": "1000",
         "grupo": "Satos",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -907,7 +908,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Varios",
-        "stockCritico":" ",
+        "stockCritico":"67",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -918,7 +919,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Varios",
-        "stockCritico":" ",
+        "stockCritico":"8",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -929,7 +930,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "PuntoCL",
-        "stockCritico":" ",
+        "stockCritico":"28",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -940,7 +941,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "PuntoCL",
-        "stockCritico":" ",
+        "stockCritico":"55",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -951,7 +952,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "PuntoCL",
-        "stockCritico":" ",
+        "stockCritico":"40",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -962,7 +963,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "PuntoCL",
-        "stockCritico":" ",
+        "stockCritico":"26",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -973,7 +974,7 @@
         "rollos": "5",
         "unidadesRollo": "500",
         "grupo": "EncurV1",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -984,7 +985,7 @@
         "rollos": "5",
         "unidadesRollo": "500",
         "grupo": "EncurV1",
-        "stockCritico":" ",
+        "stockCritico":"4",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -995,7 +996,7 @@
         "rollos": "5",
         "unidadesRollo": "500",
         "grupo": "EncurV1",
-        "stockCritico":" ",
+        "stockCritico":"3",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -1006,7 +1007,7 @@
         "rollos": "5",
         "unidadesRollo": "500",
         "grupo": "EncurV1",
-        "stockCritico":" ",
+        "stockCritico":"20",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -1017,7 +1018,7 @@
         "rollos": "5",
         "unidadesRollo": "500",
         "grupo": "EncurV1",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -1028,7 +1029,7 @@
         "rollos": "5",
         "unidadesRollo": "500",
         "grupo": "EncurV2",
-        "stockCritico":" ",
+        "stockCritico":"5",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -1039,7 +1040,7 @@
         "rollos": "5",
         "unidadesRollo": "500",
         "grupo": "EncurV2",
-        "stockCritico":" ",
+        "stockCritico":"10",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -1050,7 +1051,7 @@
         "rollos": "5",
         "unidadesRollo": "500",
         "grupo": "EncurV2",
-        "stockCritico":" ",
+        "stockCritico":"3",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -1061,7 +1062,7 @@
         "rollos": "5",
         "unidadesRollo": "500",
         "grupo": "EncurV2",
-        "stockCritico":" ",
+        "stockCritico":"4",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -1072,7 +1073,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "Varios",
-        "stockCritico":" ",
+        "stockCritico":"9",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -1083,7 +1084,7 @@
         "rollos": "5",
         "unidadesRollo": "1000",
         "grupo": "Varios",
-        "stockCritico":" ",
+        "stockCritico":"1",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -1094,7 +1095,7 @@
         "rollos": "76",
         "unidadesRollo": "330",
         "grupo": "Seguridad",
-        "stockCritico":" ",
+        "stockCritico":"8",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -1105,7 +1106,7 @@
         "rollos": "76",
         "unidadesRollo": "330",
         "grupo": "Seguridad",
-        "stockCritico":" ",
+        "stockCritico":"6",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -1116,7 +1117,7 @@
         "rollos": "76",
         "unidadesRollo": "330",
         "grupo": "Seguridad",
-        "stockCritico":" ",
+        "stockCritico":"7",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -1127,7 +1128,7 @@
         "rollos": "76",
         "unidadesRollo": "330",
         "grupo": "Seguridad",
-        "stockCritico":" ",
+        "stockCritico":"7",
         "rollosT": " ",
         "cajaT": " "
     },
@@ -1138,7 +1139,7 @@
         "rollos": "10",
         "unidadesRollo": "500",
         "grupo": "Varios",
-        "stockCritico":" ",
+        "stockCritico":"5",
         "rollosT": " ",
         "cajaT": " "
     }
