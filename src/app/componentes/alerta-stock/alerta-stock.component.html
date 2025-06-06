@@ -1,0 +1,17 @@
+<ion-header translucent>
+  <ion-toolbar color="warning">
+    <ion-title>⚠️ ETIQUETAS BAJO STOCK CRITICO</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cerrar()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ul>
+    <li *ngFor="let p of productos">
+      <strong>{{ p.producto }}</strong> (SKU: {{ p.sku }})<br>
+      Cajas: <strong>{{ p.cajaT }}</strong> / Stock Crítico: {{ p.stockCritico }}
+    </li>
+  </ul>
+</ion-content>

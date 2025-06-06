@@ -5,6 +5,7 @@ import { RouteReuseStrategy } from '@angular/router';
 import { EditrolloComponent } from './componentes/editrollo/editrollo.component';
 import { BorrartrolloComponent } from './componentes/borrartrollo/borrartrollo.component';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { AlertaStockComponent } from './componentes/alerta-stock/alerta-stock.component';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,8 +15,8 @@ import { ItemsComponent } from './items/items.component';
 import { DiaryComponent } from './diary/diary.component';
 
 @NgModule({
-  declarations: [AppComponent,EditrolloComponent,BorrartrolloComponent, InventoryComponent, ItemsComponent, DiaryComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule , FormsModule ],
+  declarations: [AppComponent,EditrolloComponent,BorrartrolloComponent, InventoryComponent, ItemsComponent, DiaryComponent,AlertaStockComponent],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule , FormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

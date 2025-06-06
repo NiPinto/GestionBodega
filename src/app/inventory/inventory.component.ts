@@ -3,6 +3,7 @@ import { JsonDataService } from '../services/json-data.service';
 import { EditrolloComponent } from '../componentes/editrollo/editrollo.component';
 import { BorrartrolloComponent } from '../componentes/borrartrollo/borrartrollo.component';
 import { ModalController } from '@ionic/angular';
+import { AlertaStockComponent } from '../componentes/alerta-stock/alerta-stock.component';
 import { IonContent } from '@ionic/angular';
 import { firstValueFrom } from 'rxjs';
 import { AlertController } from '@ionic/angular';
@@ -50,37 +51,48 @@ export class InventoryComponent  implements OnInit {
 async ngOnInit() {
   await this.jsonDataService.initDataFile();
 
-  const data = await firstValueFrom(this.jsonDataService.getData());
+  this.jsonDataService.getData().subscribe(async data => {
+    this.jsonData = data.map(item => ({
+      ...item,
+      rollosT: parseInt(item.rollosT?.toString().trim()) || 0,
+      cajaT: parseInt(item.cajaT?.toString().trim()) || 0,
+      stockCritico: parseInt(item.stockCritico?.toString().trim()) || 0,
+    }));
+    console.log("🔎 Datos transformados:");
+this.jsonData.forEach((item: any) => {
+  console.log(`Producto: ${item.producto}, CajaT: ${item.cajaT}, StockCrítico: ${item.stockCritico}`);
+});
 
-  this.jsonData = data.map(item => ({
-    ...item,
-    rollosT: parseInt(item.rollosT?.toString().trim()) || 0,
-    cajaT: parseInt(item.cajaT?.toString().trim()) || 0,
-  }));
 
-  this.productosFiltrados = [...this.jsonData];
-  this.uniqueGrupos = [...new Set(this.jsonData.map(item => item.grupo))];
+    this.productosFiltrados = [...this.jsonData];
+    this.uniqueGrupos = [...new Set(this.jsonData.map(item => item.grupo))];
 
-  const Stock_Critico = this.jsonData.filter(item => item.cajaT < item.stockCritico);
-  if (Stock_Critico.length > 0) {
-    await this.alertaStock(Stock_Critico);
+  try {
+    const Stock_Critico = this.jsonData.filter(item => item.cajaT < item.stockCritico);
+    console.log('Productos con stock crítico:', Stock_Critico);
+    if (Stock_Critico.length > 0) {
+      await this.alertaStock(Stock_Critico); 
+    }
+  } catch (err) {
+    console.error('Error al intentar mostrar alerta de stock:', err);
   }
+
+  });
 }
+
 
 
 async alertaStock(productos: any[]) {
-  const lista = productos
-    .map(p => `• ${p.producto} Cajas de Stock: ${p.cajaT} / Stock Crítico: ${p.stockCritico}`)
-    .join('\n \n \n');
-
-  const alert = await this.alertCtrl.create({
-    header: 'Productos con Stock Crítico',
-    message: `⚠️ Los siguientes productos están por debajo del nivel crítico: \n\n\n   ${lista} \n `,
-    buttons: ['OK']
+   console.log('Mostrando modal con productos críticos:', productos);
+  const modal = await this.modalCtrl.create({
+    component: AlertaStockComponent,
+    componentProps: {
+      productos
+    }
   });
-
-  await alert.present();
+  await modal.present();
 }
+
 
 
 

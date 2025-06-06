@@ -32,39 +32,56 @@ jsonData: any[] = [];
 
 async scanCode() {
   try {
-    const result = await BarcodeScanner.scan();
+    const result = await BarcodeScanner.scan({
+      formats: [
+        BarcodeFormat.QrCode,
+        BarcodeFormat.Code128,
+        BarcodeFormat.Ean13,
+        BarcodeFormat.UpcA,
+        BarcodeFormat.Code39,
+      ],
+    });
 
     if (result.barcodes && result.barcodes.length > 0) {
-      const codigoEscaneado = result.barcodes[0].rawValue;
+      const codigoEscaneado = result.barcodes[0].rawValue.trim();
       console.log('Código escaneado:', codigoEscaneado);
 
-      // Buscar el producto por SKU
       this.jsonDataService.getData().subscribe(async productos => {
-        const productoEncontrado = productos.find(p => p.sku === codigoEscaneado);
+        const productoEncontrado = productos.find(p =>
+          p.sku.toString().trim() === codigoEscaneado
+        );
 
-        if ( productoEncontrado) {
-          const cantidad = parseInt(productoEncontrado.rollosT || '0');
+        if (productoEncontrado) {
+          const cantidad = parseInt(productoEncontrado.rollosT || '0', 10);
           productoEncontrado.rollosT = cantidad + 1;
 
-          productoEncontrado.cajaT = Math.floor(productoEncontrado.rollosT / productoEncontrado.rollos);
+          productoEncontrado.cajaT = Math.floor(
+            productoEncontrado.rollosT / productoEncontrado.rollos
+          );
 
           await this.jsonDataService.saveData(productos);
-          //await this.jsonDataService.saveData(this.jsonData);
-          await this.jsonDataService.logMovimiento('ingreso', productoEncontrado, productoEncontrado.cantidad, productoEncontrado.cantCajaT);
-          alert(`SE INGRESA ${productoEncontrado.rollosT} ROLLO DE:${productoEncontrado.producto}  `);
+          await this.jsonDataService.logMovimiento(
+            'ingreso',
+            productoEncontrado,
+            productoEncontrado.rollosT,
+            productoEncontrado.cajaT
+          );
+
+          alert(
+            `SE INGRESA ${productoEncontrado.rollosT} ROLLO DE: ${productoEncontrado.producto}`
+          );
         } else {
           alert('Producto no encontrado en inventario.');
         }
-
       });
     } else {
       alert('No se detectó ningún código.');
     }
-
   } catch (error) {
     console.error('Error al escanear:', error);
     alert('Hubo un error al escanear el código.');
   }
 }
+
 }
 
