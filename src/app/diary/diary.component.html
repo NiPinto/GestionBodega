@@ -1,16 +1,17 @@
 <ion-content>
   
-<div>
-  <ion-select [(ngModel)]="fechaSeleccionada" (ionChange)="buscarFecha()" placeholder="Filtrar por fecha">
-    <ion-select-option *ngFor="let fecha of fechas" [value]="fecha">
-      {{ fecha }}
-    </ion-select-option>
-  </ion-select>
 
-</div>
 
 <!--Tabla correspondiente al resumen diario-->
   <main>
+    <div class="container-filter">
+      <ion-select class="card-glass" [(ngModel)]="fechaSeleccionada" (ionChange)="buscarFecha()" placeholder="Filtrar por fecha">
+        <ion-select-option *ngFor="let fecha of fechas" [value]="fecha">
+          {{ fecha }}
+        </ion-select-option>
+      </ion-select>
+    
+    </div>
     <div class="container-table card-glass">
       <ion-grid>
         <ion-row>

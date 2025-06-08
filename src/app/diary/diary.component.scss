@@ -97,3 +97,17 @@ ion-button {
     left: 0;
     z-index: -1;
 }
+
+.container-filter{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 1rem;
+}
+
+.container-filter ion-select {
+    width: 200px;
+    background-color: #113b8f;
+    color: #fff;
+    padding: 0 1rem;
+    text-align: center;
+} 

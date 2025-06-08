@@ -1,37 +1,35 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>QR</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">QR</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+  
 
 <!-- <ion-button (click)="scanCode()">Escanear</ion-button> -->
-<div>
-  <a routerLink="/home">Volver</a>
-</div>
 
-<div class="container-filter">
-  <h1> Presiona el botón para activar la Camara</h1>
-  <a (click)="scanCode()">escanear</a>
-  
-</div>
-<div>
-  <ion-grid>
-    <ion-row>
-      <ion-col>Registro Escaner</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>SKU</ion-col>
-      <ion-col>Etiqueta</ion-col>
-      <ion-col>Cantidad Rollos</ion-col>
-    </ion-row>
-  </ion-grid>
-</div>
+<main class="gradient-background">
+  <header class="header-productos" id="header">
+    <a routerLink="/home"><img src="/assets/icon/back.svg"></a>
+    <h1>Escaneo de productos</h1>
+  </header>
+
+  <section class="container-principal">
+    <div class="container-registro card-glass">
+      <ion-grid>
+        <ion-row>
+          <ion-col>Registro Escaner</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>SKU</ion-col>
+          <ion-col>Etiqueta</ion-col>
+          <ion-col>Cantidad Rollos</ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div (click)="scanCode()" class="container-escanear card-glass">
+      <span>Presiona el botón para escanear con la cámara</span>
+      <img src="/assets/icon/camera.svg" class="icon-img">
+    </div>
+
+  </section>
+</main>
+
 </ion-content>

@@ -125,3 +125,12 @@ ion-button {
 .btn-edicion:first-child {
     background-color: #1d4597;
 }
+
+.stock-critico  {
+    margin: 1rem;
+
+    & svg {
+        width: 25px;
+        height: 25px;
+    }
+}
