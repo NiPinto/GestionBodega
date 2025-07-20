@@ -23,7 +23,12 @@
           <ion-col>Cantidad Rollos</ion-col>
         </ion-row>
       </ion-grid>
+
+      <ion-row *ngFor="let item of jsonData">
+      <ion-col></ion-col>
+    </ion-row>
     </div>
+
     <div (click)="scanCode()" class="container-escanear card-glass">
       <span>Presiona el botón para escanear con la cámara</span>
       <img src="/assets/icon/camera.svg" class="icon-img">

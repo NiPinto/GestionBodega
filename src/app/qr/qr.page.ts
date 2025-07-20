@@ -30,6 +30,7 @@ jsonData: any[] = [];
   }
 
 
+  
 async scanCode() {
   try {
     const result = await BarcodeScanner.scan({
